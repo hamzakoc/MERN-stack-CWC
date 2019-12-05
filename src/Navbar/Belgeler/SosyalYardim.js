@@ -1,19 +1,50 @@
 import React, { Component } from 'react'
+import { Container, Row, Col} from 'reactstrap';
 
-export default class Hakkimizda extends Component {
+export default class SosyalYardim extends Component {
     render() {
         return (
             <div>
-                <p>Canada Welcome Centre is a voluntary organization which is performing its activities under the roof of Northern Lights Relief Foundation.
+             <Container>
+                 <Col>                
+                 <h1>DEVLET (WALFARE) YARDIMI BASVURUSU</h1>
+                 <p>Sarı belge alan kişiler; maddi durumları iyi değilse, kısıtlı imkanı
+                        olduklarını kanıtlayabilecek durumdalarsa kimlikleriyle birlikte vakit
+                        geçirmeden Ontorio Works’e başvurmaları gerekir. Bu başvuru hem telefon
+                        hem de online olarak yapılabilmektedir. Online başvuru yapılsa dahi
+                     tekrar telefonla arayıp randevu tarihi alınmalıdır.</p>
+                     Online Başvuru Formu: <a href="https://saapply.mcss.gov.on.ca/CitizenPortal/application.do" target="_blank">
+                         burayı tıklayın</a>
 
-Its main mission is to help newcomers to get adapted to their new living environment by giving them reliable and practical information. Besides, specific services we will provide will help newcomers benefit from our welcome center as a resource for their needs.
+                    <p>Telefon Numarası: +1 (855) 231 12 55</p>
 
-Our vision is growing our Canadian communities by helping them from scratch. Today’s newcomers will become the settled members of our society. We need to build up our society by helping each other. We believe that helping when needed, when you first came to this country will never be forgotten.
+                    <h5>Önemli Not</h5>
 
-We are here to help all newcomers…
+                    <p>Randevuya giderken yanınızda bulundurmanız gereken belgeler:
+                        <ul>
+                               <li>Sarı belge;</li> 
+                               <li>Banka hesap hareketleriyle ilgili belge ve hesap ekstresi (direct deposit
+                                form ve bank statement)(Kanadada açılan banka hesabı);</li> 
+                                <li>Mevcut durumda kaldığınız adresi gösterir belge;</li> 
+                                <li>Kira ödeyip ödemeğinize dair belge (Kira sözleşmesi)</li> 
+                                
+                             </ul>   
+                                <p>Randevuda görüşme yapacak olan görevli (case worker), sizin
+                                gerçekten devlet yardımına ihtiyacınız olduğuna inanmalıdır. 
+                                Aksi takdirde para yardımı alamayabilirsiniz.
+                                Para yardımı randevudan 2 iş günü içerisinde
+                                banka hesabınıza yatırılır</p>         
+                 </p>
 
-We encourage our friends to help us in this mission and vision by contributing in several ways; donations, participating activities as volunteers and informing others about our activities.</p>
-            </div>
+                                <p>Adress: <a href="https://www.mcss.gov.on.ca/en/mcss/programs/social/ow/contacts/ow_Contacts.aspx" target="_blank">tıklayınız</a> </p>
+
+                                <p>Daha Fazla bilgi için <a href="https://www.mcss.gov.on.ca/en/mcss/programs/social/ow/" target="_blank">tıklayınız</a></p>
+                 </Col>
+            </Container>
+             
+             
+             
+             </div>
         )
     }
 }

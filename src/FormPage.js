@@ -5,9 +5,7 @@ import Map from './Navbar/Map/Map.js'
 const FormPage = () => {
   return (
   <div>
-    <Map></Map>
-    
-   
+  
     <Container>
       <Row>
         <Col md="6">

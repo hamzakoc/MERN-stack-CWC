@@ -1,44 +1,67 @@
 import React from 'react';
 import {Card, Button, CardImg, CardTitle, CardText, CardDeck,CardSubtitle, CardBody} from 'reactstrap';
+import { BrowserRouter as Router,  Switch,  Route,  Link} from "react-router-dom";
+
+
+// import Yardim from './Navbar/Anasayfa/Yardim';
+// import Gonullu from './Navbar/Anasayfa/Gonullu';
+// import Katkida from './Navbar/Anasayfa/Katkida';
+import yardim from './component/images/help.jpg'
+import gonullu from './component/images/volunter.jpg'
+import donation from './component/images/donation.jpg'
+
+import './css/background.css';
 
 const Main = () => {
   return (
-
-   
-    <CardDeck>
+<Router>
+    <CardDeck className="backgroundMain">
       <Card>
-        <CardImg top width="100%" src="https://ellyelite.com/wp-content/uploads/2019/08/Familyphotoschicago_06.jpg" alt="Card image cap" />
+        <CardImg top width="100%" src={yardim} alt="Card image cap" />
         <CardBody>
-          <CardTitle>DO YOU NEED HELP?</CardTitle>
+          <CardTitle>Yardıma İhtiyacınız mı var?</CardTitle>
           <CardSubtitle></CardSubtitle>
-          <CardText>Getting used to Canada will take time. You will have many problems to solve but we, 
-            Canada Welcome Centre, will help you as much as we can to solve them. 
-            Please fill in the following form for us to help you</CardText>
-          <Button>Button</Button>
+          <CardText>Kanada'ya alışmak zaman alabilir. Çözmeniz gereken birçok probleminiz olacak. 
+            Biz Kanada Karşılama Merkezi olarak karşılaştığınız sorunları çözmek için elimizden
+             geldiğince yardımcı olacağız.Daha fazla bilgi için </CardText>
+            <a href="/Yardim"><Button>Tıklayınız</Button></a>
         </CardBody>
       </Card>
       <Card>
-        <CardImg top width="100%" src="https://cdn.gobankingrates.com/wp-content/uploads/2019/08/volunteer-donate-plant-trees-help-environment-iStock-834398248-1280x720.jpg" alt="Card image cap" />
+        
+        <CardImg top width="100%" src={gonullu} alt="Card image cap" />
         <CardBody>
-          <CardTitle>VOLUNTEER!</CardTitle>
+          <CardTitle>Gönüllü Olun!</CardTitle>
           <CardSubtitle></CardSubtitle>
-          <CardText>Becoming a volunteer, you are not just giving your time and skills; you get so much back in return. 
-            Here are some of the benefits: Give back to your community Gain valuable experience by being 
-            part of a team Meet people who share your interests Improve your leadership skills Share your 
-            knowledge and life lessons…</CardText>
-          <Button>Button</Button>
+          <CardText>
+            Gönüllü olmak ile sadece zamanınızı ve becerilerinizi vermekle kalmayacaksınız; karşılığında çok daha 
+            fazlasını geri kazanacaksınız. Yeni arkadaş edinmenize, yeni beceriler 
+            kazamanıza, kariyerinizi ilerletmenize ve hatta daha mutlu ve daha sağlıklı 
+            hissetmenize yardımcı olabilir. Daha fazla bilgi için</CardText>
+            <a href="/Gonullu"><Button>Tıklayınız</Button></a>
         </CardBody>
       </Card>
       <Card>
-        <CardImg top width="100%" src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1094439874%2F960x0.jpg%3Ffit%3Dscale%20alt=" alt="Card image cap" />
+        <CardImg top width="100%" src={donation} alt="Card image cap" />
         <CardBody>
-          <CardTitle>DONATE!</CardTitle>
+          <CardTitle>Bağış Yapın!</CardTitle>
           <CardSubtitle></CardSubtitle>
-          <CardText>If you would like to contribute us with your donations, please follow the link below;</CardText>
-          <Button>Button</Button>
+          <CardText>Bize bağışlarınızla katkıda bulunmak istiyorsanız, lütfen aşağıdaki bağlantıyı </CardText>
+          <a href="/Katkida"><Button>Tıklayınız</Button></a>
         </CardBody>
       </Card>
     </CardDeck>
+    
+    
+    {/* <Switch>
+
+          <Route path="/yardim"><Yardim/></Route>
+          <Route path="/gonullu"><Gonullu/></Route>
+          <Route path="/katkida"><Katkida/></Route>
+    </Switch> */}
+
+
+    </Router>
   
   );
 };

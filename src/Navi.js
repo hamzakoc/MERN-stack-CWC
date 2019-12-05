@@ -1,4 +1,6 @@
 import React from 'react';
+import './css/navbarlink.css';
+
 
 import {
   Collapse,
@@ -18,9 +20,10 @@ import {
     Link
   } from "react-router-dom";
 
+  import logo from './component/images/logo.jpeg'
+
 // Anasayfa
 import Hakkimizda from './Navbar/Anasayfa/Hakkimizda';
-import YeniIcerikler from './Navbar/Anasayfa/YeniIcerikler';
 import Yardim from './Navbar/Anasayfa/Yardim';
 import Gonullu from './Navbar/Anasayfa/Gonullu';
 import Katkida from './Navbar/Anasayfa/Katkida';
@@ -50,7 +53,7 @@ import AlisVeris from './Navbar/GidaveAlisveris/AlisVeris';
 import InternettenAlisveris from './Navbar/GidaveAlisveris/InternettenAlisveris';
 
 // Sağlık
-import SaglikKuruluslari from './Navbar/Saglik/SaglikKuruluslari';
+import SaglikHizmetleri from './Navbar/Saglik/SaglikHizmetleri';
 import Laboratuvarlar from './Navbar/Saglik/Laboratuvarlar';
 import AileDoktorlari from './Navbar/Saglik/AileDoktorlari';
 import DisHekimleri from './Navbar/Saglik/DisHekimleri';
@@ -73,7 +76,7 @@ import Ciraklik from './Navbar/Istihdam/Ciraklik';
 import CocuklarIcinOkullar from './Navbar/Egitim/CocuklarIcinOkullar';
 import YetiskinlerIcinOkullar from './Navbar/Egitim/YetiskinlerIcinOkullar';
 import YazveKisOkullari from './Navbar/Egitim/YazveKisOkullari';
-import Kurslar1 from './Navbar/Egitim/Kurslar1';
+
 
 // Kültür ve Sosyal Hayat
 import GonulluCalismak from './Navbar/KulturveSosyalHayat/GonulluCalismak';
@@ -94,6 +97,8 @@ import Organizasyonlar from './Navbar/OzelBakim/Organizasyonlar';
 
 import Main from './Main'
 
+import CardApi from './CardApi'
+
 export default class Navi extends React.Component {
   constructor(props) {
     super(props);
@@ -113,127 +118,121 @@ export default class Navi extends React.Component {
 
     const navstyle = {
       color: "white",
-      
-    
-    };
-    const navcolor = {
-      color: "black",
-      textDecoration: 'none'
-    
-    };
+      paddingLeft: "30px"
+        };
+   
 
 
     return (
 
       <Router>
       <div>
-        <Navbar color="dark"  light expand="md">
-          <NavbarBrand  style={navstyle} href="/Main"><img src="https://cndwlcmcntr.com//wp-content/uploads/2019/06/logo-uncut-1024x650.jpeg" width="40" height="40"></img></NavbarBrand>
+        
+        <Navbar className="navbarfixed"   light expand="md">
+          
+          <NavbarBrand  style={navstyle} href="/m"><img src={logo} width="40" height="40"></img></NavbarBrand>
+          <Link to="/m"><div className="navwelcome">Canada Welcome Center   ||</div></Link>
           <NavbarToggler  onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav  navbar>              
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={navstyle} nav caret href="/Main">Anasayfa</DropdownToggle>
-                  <DropdownMenu >
-                        <DropdownItem> <Link to="/hakkimizda" style={navcolor}>Hakkımızda</Link></DropdownItem>
-                        <DropdownItem> <Link to="/yeniIcerikler" style={navcolor}>Yeni İçerikler</Link></DropdownItem>
-                        <DropdownItem><Link to="/yardim" style={navcolor}>Yardıma ihtiyacınız mı var?</Link></DropdownItem>
-                        <DropdownItem> <Link to="/gonullu" style={navcolor}>Gönüllü Olun!</Link></DropdownItem>
-                        <DropdownItem> <Link to="/katkida" style={navcolor}>Katkıda Bulunun!</Link></DropdownItem>
-                        <DropdownItem><Link to="/bizeulasın" style={navcolor}>Bize Ulasın</Link></DropdownItem>
+              <UncontrolledDropdown inNavbar >
+                <DropdownToggle style={navstyle} nav  >Anasayfa</DropdownToggle>
+                  <DropdownMenu className="navbackcolor"  >
+                        <DropdownItem> <Link to="/hakkimizda" className="navcolor " >Hakkımızda</Link></DropdownItem>
+                        <DropdownItem><Link to="/yardim" className="navcolor">Yardıma ihtiyacınız mı var?</Link></DropdownItem>
+                        <DropdownItem> <Link to="/gonullu" className="navcolor">Gönüllü Olun!</Link></DropdownItem>
+                        <DropdownItem> <Link to="/katkida" className="navcolor">Katkıda Bulunun!</Link></DropdownItem>
+                        <DropdownItem><Link to="/bizeulasın" className="navcolor">Bize Ulasın</Link></DropdownItem>
                   </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={navstyle} nav caret>Belgeler</DropdownToggle>
-                  <DropdownMenu >
-                        <DropdownItem> <Link to="/basvurusurecleri" style={navcolor}>Başvuru Süreçleri </Link></DropdownItem>
-                        <DropdownItem> <Link to="/hukukiyardim" style={navcolor}>Hukuki Yardım</Link></DropdownItem>
-                        <DropdownItem> <Link to="/sosyalyardim" style={navcolor}>Sosyal Yardım</Link></DropdownItem>
-                        <DropdownItem> <Link to="/ulasim" style={navcolor}>Ulaşım</Link></DropdownItem>
-                        <DropdownItem> <Link to="/telefonhatti" style={navcolor}>Telefon Hattı</Link></DropdownItem>
-                        <DropdownItem> <Link to="/evinterneti" style={navcolor}>Ev İnterneti</Link></DropdownItem>
-                        <DropdownItem> <Link to="/kutuphanekarti" style={navcolor}>Kütüphane Kartı</Link></DropdownItem>
-                        <DropdownItem> <Link to="/ehliyet" style={navcolor}>Ehliyet</Link></DropdownItem>
-                        <DropdownItem> <Link to="/bankahesaplari" style={navcolor}>Banka Hesapları</Link></DropdownItem>
-                        <DropdownItem> <Link to="/kredikartlari" style={navcolor}>Kredi Kartları</Link></DropdownItem>
-                        <DropdownItem> <Link to="/kiralamaalimsatim" style={navcolor}>Kiralama, Alım-Satım</Link></DropdownItem>
-                        <DropdownItem> <Link to="/sigortalar" style={navcolor}>Sigortalar</Link></DropdownItem>
-                        <DropdownItem> <Link to="/seyehatbelgeleri" style={navcolor}>Seyehat Belgeleri</Link></DropdownItem>
+                <DropdownToggle style={navstyle} nav >Belgeler</DropdownToggle>
+                  <DropdownMenu  className="navbackcolor">
+                        <DropdownItem> <Link to="/basvurusurecleri" className="navcolor">Başvuru Süreçleri </Link></DropdownItem>
+                        <DropdownItem> <Link to="/hukukiyardim" className="navcolor">Hukuki Yardım</Link></DropdownItem>
+                        <DropdownItem> <Link to="/sosyalyardim" className="navcolor">Sosyal Yardım</Link></DropdownItem>
+                        <DropdownItem> <Link to="/ulasim" className="navcolor">Ulaşım</Link></DropdownItem>
+                        <DropdownItem> <Link to="/telefonhatti" className="navcolor">Telefon Hattı</Link></DropdownItem>
+                        <DropdownItem> <Link to="/evinterneti" className="navcolor">Ev İnterneti</Link></DropdownItem>
+                        <DropdownItem> <Link to="/kutuphanekarti" className="navcolor">Kütüphane Kartı</Link></DropdownItem>
+                        <DropdownItem> <Link to="/ehliyet" className="navcolor">Ehliyet</Link></DropdownItem>
+                        <DropdownItem> <Link to="/bankahesaplari" className="navcolor">Banka Hesapları</Link></DropdownItem>
+                        <DropdownItem> <Link to="/kredikartlari" className="navcolor">Kredi Kartları</Link></DropdownItem>
+                        <DropdownItem> <Link to="/kiralamaalimsatim" className="navcolor">Kiralama, Alım-Satım</Link></DropdownItem>
+                        <DropdownItem> <Link to="/sigortalar" className="navcolor">Sigortalar</Link></DropdownItem>
+                        <DropdownItem> <Link to="/seyehatbelgeleri" className="navcolor">Seyehat Belgeleri</Link></DropdownItem>
                   </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={navstyle} nav caret>Gıda ve Alışveriş</DropdownToggle>
-                  <DropdownMenu >
-                        <DropdownItem> <Link to="/yiyecekbanklari" style={navcolor}>Yiyecek Bankaları </Link></DropdownItem>
-                        <DropdownItem> <Link to="/ozelgidalar" style={navcolor}>Özel Gıdalar</Link></DropdownItem>
-                        <DropdownItem> <Link to="/marketler" style={navcolor}>Marketler</Link></DropdownItem>
-                        <DropdownItem> <Link to="/giysimagazalari" style={navcolor}>Giysi Mağazaları</Link></DropdownItem>
-                        <DropdownItem> <Link to="/alisveris" style={navcolor}>Alış Veriş</Link></DropdownItem>
-                        <DropdownItem> <Link to="/internettenalisveris" style={navcolor}>İnternetten Alışveriş</Link></DropdownItem>                   
+                <DropdownToggle style={navstyle} nav >Gıda ve Alışveriş</DropdownToggle>
+                  <DropdownMenu className="navbackcolor">
+                        <DropdownItem> <Link to="/yiyecekbanklari" className="navcolor">Yiyecek Bankaları </Link></DropdownItem>
+                        <DropdownItem> <Link to="/ozelgidalar" className="navcolor">Özel Gıdalar</Link></DropdownItem>
+                        <DropdownItem> <Link to="/marketler" className="navcolor">Marketler</Link></DropdownItem>
+                        <DropdownItem> <Link to="/giysimagazalari" className="navcolor">Giysi Mağazaları</Link></DropdownItem>
+                        <DropdownItem> <Link to="/alisveris" className="navcolor">Alış Veriş</Link></DropdownItem>
+                        <DropdownItem> <Link to="/internettenalisveris" className="navcolor">İnternetten Alışveriş</Link></DropdownItem>                   
                   </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={navstyle} nav caret>Sağlık</DropdownToggle>
-                  <DropdownMenu >
-                        <DropdownItem> <Link to="/saglikkuruluslari" style={navcolor}>Sağlık Kuruluşları </Link></DropdownItem>
-                        <DropdownItem> <Link to="/laboratuvarlar" style={navcolor}>Laboratuvarlar </Link></DropdownItem>
-                        <DropdownItem> <Link to="/ailedoktorlari" style={navcolor}>Aile Doktorları </Link></DropdownItem>
-                        <DropdownItem> <Link to="/dishekimleri" style={navcolor}>Diş Hekimleri </Link></DropdownItem>
-                        <DropdownItem> <Link to="/gidabakimi" style={navcolor}>Gıda Bakımı </Link></DropdownItem>
-                        <DropdownItem> <Link to="/gecicibarinma" style={navcolor}>Geçici barınma </Link></DropdownItem>
-                        <DropdownItem> <Link to="/evkiralama" style={navcolor}>Ev Kiralama </Link></DropdownItem>
-                        <DropdownItem> <Link to="/evsatinalma" style={navcolor}>Ev Satın Alma </Link></DropdownItem>
-                        <DropdownItem> <Link to="/yurtlar" style={navcolor}>Yurtlar </Link></DropdownItem>             
+                <DropdownToggle style={navstyle} nav >Sağlık</DropdownToggle>
+                  <DropdownMenu className="navbackcolor" >
+                        <DropdownItem> <Link to="/saglikhizmetleri" className="navcolor">Sağlık Hizmetleri </Link></DropdownItem>
+                        <DropdownItem> <Link to="/laboratuvarlar" className="navcolor">Laboratuvarlar </Link></DropdownItem>
+                        <DropdownItem> <Link to="/ailedoktorlari" className="navcolor">Aile Doktorları </Link></DropdownItem>
+                        <DropdownItem> <Link to="/dishekimleri" className="navcolor">Diş Hekimleri </Link></DropdownItem>
+                        <DropdownItem> <Link to="/gidabakimi" className="navcolor">Gıda Bakımı </Link></DropdownItem>
+                             
                   </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={navstyle} nav caret>Barınma</DropdownToggle>
-                  <DropdownMenu >
-                         <DropdownItem> <Link to="/gecicibarinma" style={navcolor}>Geçici barınma </Link></DropdownItem>
-                        <DropdownItem> <Link to="/evkiralama" style={navcolor}>Ev Kiralama </Link></DropdownItem>
-                        <DropdownItem> <Link to="/evsatinalma" style={navcolor}>Ev Satın Alma </Link></DropdownItem>
-                        <DropdownItem> <Link to="/yurtlar" style={navcolor}>Yurtlar </Link></DropdownItem>             
+                <DropdownToggle style={navstyle} nav >Barınma</DropdownToggle>
+                  <DropdownMenu className="navbackcolor">
+                         <DropdownItem> <Link to="/gecicibarinma" className="navcolor">Geçici barınma </Link></DropdownItem>
+                        <DropdownItem> <Link to="/evkiralama" className="navcolor">Ev Kiralama </Link></DropdownItem>
+                        <DropdownItem> <Link to="/evsatinalma" className="navcolor">Ev Satın Alma </Link></DropdownItem>
+                        <DropdownItem> <Link to="/yurtlar" className="navcolor">Yurtlar </Link></DropdownItem>             
                   </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={navstyle} nav caret>İstihdam</DropdownToggle>
-                  <DropdownMenu >
-                       <DropdownItem> <Link to="/isbulmakurumlari" style={navcolor}>İş Bulma Kurumları </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/denklik" style={navcolor}>WES, ICAS (Denklik) </Link></DropdownItem>             
-                       <DropdownItem> <Link to="/sertifikalar" style={navcolor}>Sertifikalar </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/kurslar" style={navcolor}>Kurslar </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/ciraklik" style={navcolor}>Çıraklık </Link></DropdownItem> 
+                <DropdownToggle style={navstyle} nav >İstihdam</DropdownToggle>
+                  <DropdownMenu className="navbackcolor">
+                       <DropdownItem> <Link to="/isbulmakurumlari" className="navcolor">İş Bulma Kurumları </Link></DropdownItem> 
+                       <DropdownItem> <Link to="/denklik" className="navcolor">WES, ICAS (Denklik) </Link></DropdownItem>             
+                       <DropdownItem> <Link to="/sertifikalar" className="navcolor">Sertifikalar </Link></DropdownItem> 
+                       <DropdownItem> <Link to="/kurslar" className="navcolor">Kurslar </Link></DropdownItem> 
+                       <DropdownItem> <Link to="/ciraklik" className="navcolor">Çıraklık </Link></DropdownItem> 
                   </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={navstyle} nav caret>Eğitim</DropdownToggle>
-                  <DropdownMenu >
-                       <DropdownItem> <Link to="/cocuklaricinokullar" style={navcolor}>Çocuklar için Okullar</Link></DropdownItem> 
-                       <DropdownItem> <Link to="/yetiskinlericinokullar" style={navcolor}>Yetişkinler için Okullar </Link></DropdownItem>             
-                       <DropdownItem> <Link to="/yazvekisokullari" style={navcolor}>Yaz ve Kış Okulları </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/kurslar" style={navcolor}>Kurslar </Link></DropdownItem> 
+                <DropdownToggle style={navstyle} nav >Eğitim</DropdownToggle>
+                  <DropdownMenu className="navbackcolor" >
+                       <DropdownItem> <Link to="/cocuklaricinokullar" className="navcolor">Çocuklar için Okullar</Link></DropdownItem> 
+                       <DropdownItem> <Link to="/yetiskinlericinokullar" className="navcolor">Yetişkinler için Okullar </Link></DropdownItem>             
+                       <DropdownItem> <Link to="/yazvekisokullari" className="navcolor">Yaz ve Kış Okulları </Link></DropdownItem> 
+                      
                   </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={navstyle} nav caret>Kültür ve Sosyal Hayat</DropdownToggle>
-                  <DropdownMenu >
-                       <DropdownItem> <Link to="/gonullucalismak" style={navcolor}>Gönüllü Çalışmak </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/kanadakulturu" style={navcolor}>Kanada Kültürü </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/gezilecekyerler" style={navcolor}>Gezilecek Yerler </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/onemlikutsalmekanlar" style={navcolor}>Önemli Kutsal Mekanlar </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/sporfaaliyetleri" style={navcolor}>Spor Faaliyetleri </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/sanatfaaliyetleri" style={navcolor}>Sanat Faaliyetleri </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/muzikfaaliyetleri" style={navcolor}>Müzik Faaliyetleri </Link></DropdownItem> 
+                <DropdownToggle style={navstyle} nav >Kültür ve Sosyal Hayat</DropdownToggle>
+                  <DropdownMenu className="navbackcolor" >
+                       <DropdownItem> <Link to="/gonullucalismak" className="navcolor">Gönüllü Çalışmak </Link></DropdownItem> 
+                       <DropdownItem> <Link to="/kanadakulturu" className="navcolor">Kanada Kültürü </Link></DropdownItem> 
+                       <DropdownItem> <Link to="/gezilecekyerler" className="navcolor">Gezilecek Yerler </Link></DropdownItem> 
+                       <DropdownItem> <Link to="/onemlikutsalmekanlar" className="navcolor">Önemli Kutsal Mekanlar </Link></DropdownItem> 
+                       <DropdownItem> <Link to="/sporfaaliyetleri" className="navcolor">Spor Faaliyetleri </Link></DropdownItem> 
+                       <DropdownItem> <Link to="/sanatfaaliyetleri" className="navcolor">Sanat Faaliyetleri </Link></DropdownItem> 
+                       <DropdownItem> <Link to="/muzikfaaliyetleri" className="navcolor">Müzik Faaliyetleri </Link></DropdownItem> 
                   </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={navstyle} nav caret>Özel Bakım</DropdownToggle>
-                  <DropdownMenu >
-                       <DropdownItem> <Link to="/devlethizmetleri" style={navcolor}>Devlet Hizmetleri </Link></DropdownItem> 
-                       <DropdownItem> <Link to="/ozelkuruluslar" style={navcolor}>Özel Kuruluşlar</Link></DropdownItem> 
-                       <DropdownItem> <Link to="/topluluklar" style={navcolor}>Topluluklar</Link></DropdownItem> 
-                       <DropdownItem> <Link to="/imkanlar" style={navcolor}>İmkanlar</Link></DropdownItem> 
-                       <DropdownItem> <Link to="/organizasyonlar" style={navcolor}>Organizasyonlar</Link></DropdownItem> 
+                <DropdownToggle style={navstyle} nav >Özel Bakım</DropdownToggle>
+                  <DropdownMenu className="navbackcolor">
+                       <DropdownItem> <Link to="/devlethizmetleri"className="navcolor">Devlet Hizmetleri </Link></DropdownItem> 
+                       <DropdownItem> <Link to="/ozelkuruluslar" className="navcolor">Özel Kuruluşlar</Link></DropdownItem> 
+                       <DropdownItem> <Link to="/topluluklar" className="navcolor">Topluluklar</Link></DropdownItem> 
+                       <DropdownItem> <Link to="/imkanlar" className="navcolor">İmkanlar</Link></DropdownItem> 
+                       <DropdownItem> <Link to="/organizasyonlar" className="navcolor">Organizasyonlar</Link></DropdownItem> 
                        
                   </DropdownMenu>
               </UncontrolledDropdown>
@@ -243,11 +242,11 @@ export default class Navi extends React.Component {
 
 
         <Switch>
-        <Route path="/Main"><Main/></Route>
+        <Route path="/m"><CardApi/><Main/></Route>
+        
 
           {/* Anasayfa */}
           <Route path="/hakkimizda"><Hakkimizda/></Route>
-          <Route path="/yeniIcerikler"><YeniIcerikler/></Route>
           <Route path="/yardim"><Yardim/></Route>
           <Route path="/gonullu"><Gonullu/></Route>
           <Route path="/katkida"><Katkida/></Route>
@@ -277,7 +276,7 @@ export default class Navi extends React.Component {
           <Route path="/internettenalisveris"><InternettenAlisveris/></Route>
 
           {/* Sağlık */}
-          <Route path="/saglikkuruluslari"><SaglikKuruluslari/></Route>
+          <Route path="/saglikhizmetleri"><SaglikHizmetleri/></Route>
           <Route path="/laboratuvarlar"><Laboratuvarlar/></Route>
           <Route path="/ailedoktorlari"><AileDoktorlari/></Route>
           <Route path="/dishekimleri"><DisHekimleri/></Route>
@@ -300,7 +299,7 @@ export default class Navi extends React.Component {
           <Route path="/cocuklaricinokullar"><CocuklarIcinOkullar/></Route>
           <Route path="/yetiskinlericinokullar"><YetiskinlerIcinOkullar/></Route>
            <Route path="/yazvekisokullari"><YazveKisOkullari/></Route>
-          <Route path="/kurslar"><Kurslar1/></Route>
+          
 
           {/* Kültür ve Sosyal Hayat */}
           <Route path="/gonullucalismak"><GonulluCalismak/></Route>

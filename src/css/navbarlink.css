@@ -1,0 +1,50 @@
+.navcolor{
+    color:white;
+    
+     
+}
+
+.navbackcolor{  
+  background-color: rgba(39, 41, 39, 0.8);
+  color:black;
+  }
+
+.navbackcolor .navcolor:hover {
+    text-decoration: none;
+    color:black;
+    
+}
+
+.navbackcolor:hover {
+  text-decoration: none;
+  color:black;
+  
+}
+
+
+.navbarfixed{
+  width: 98.4%;  
+  z-index: 9;
+  position: fixed;  
+  background-color: rgba(39, 41, 39, 0.8);
+  margin-bottom: 90px;
+  
+}
+
+
+.navwelcome{
+  
+  color: #ffffff; 
+  font-family: sans-serif; 
+  font-size: 25px; 
+  font-weight: 800; 
+  text-decoration: none;
+  text-align: center; 
+  text-transform: uppercase;
+}
+
+.navwelcome:hover {
+  text-decoration: none;
+  
+  
+}

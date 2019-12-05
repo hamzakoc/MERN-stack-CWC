@@ -5,6 +5,7 @@ import { faTwitter, faFacebook, faLinkedin, faGoogle, faInstagram } from '@forta
 
 
 
+
 const FooterPage = () => {
 
     const navcolor = {
@@ -81,7 +82,7 @@ const FooterPage = () => {
                     </div>
           </div>
       </div>
-      </div>
+</div>
   );
 }
 

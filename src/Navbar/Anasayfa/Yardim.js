@@ -1,10 +1,28 @@
 import React, { Component } from 'react'
+import { Container, Row, Col} from 'reactstrap';
+import FormPage from './../../FormPage'
 
 export default class Yardim extends Component {
     render() {
         return (
             <div>
-                <p>Getting used to Canada will take time. You will have many problems to solve but we, Canada Welcome Centre, will help you as much as we can to solve them. Please fill in the following form for us to help you;</p>
+                <Container>
+                    <Col>
+                     <Row>
+                         
+                         <h1>Yardıma İhtiyacınız mı var ?</h1>
+                         <br></br>
+                         <p>Kanada'ya alışmak zaman alabilir. Çözmeniz gereken birçok probleminiz olacak. Biz
+                             Kanada Karşılama Merkezi olarak karşılaştığınız sorunları çözmek için elimizden geldiğince 
+                    yardımcı olacağız.Size yardımcı olabilmemiz için aşağıdaki formu doldurunuz.</p>
+                    
+                        </Row>
+                    </Col>
+                    </Container>
+                    <br></br><br></br><br></br>
+                    <FormPage/>
+
+                
             </div>
         )
     }
