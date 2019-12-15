@@ -42,7 +42,7 @@ export default class Ehliyet extends Component {
                                     G ehliyeti ile işlere başvurabilirsiniz. Uber , Lyft gibi yerlerde çalışabilirsiniz. </p>       
 
                       </Col>
-                </Container>            
+                </Container>         <br></br> <br></br> <br></br>     
              </div>
         )
     }

@@ -6,7 +6,6 @@ export default class SaglikHizmetleri extends Component {
         return (
             <div>
             
-            <br></br><br></br>
                 <Container>
                       <Col>
                       <h1>ONTARIO/KANADA Sağlık Hizmetleri</h1><br></br>
@@ -58,10 +57,6 @@ export default class SaglikHizmetleri extends Component {
                               <p>Hastanelerdeki veya kliniklerdeki doktorlarin yonlendirilmesi ile gidilen laboratuvarlar da yine 
                                   IFHP kapsaminda hasta kabul ederler.</p>
                           
-                          
-                          
-                          
-                          
                           <h4>B.Mahkeme Sonrası (OHIP)</h4>    
                           <p>Mahkeme gecilmeden yaralanilamayan Ontario Saglik Sigorta Programi (OHIP) da saglik alaninda kolayliklar sunmaktadir. 
                               Bu hizmetten yararlanmak icin ServiceOntario lardan refugee claimant belgesi, Ontario’da oturdugunuza dair belge ve 
@@ -92,7 +87,7 @@ export default class SaglikHizmetleri extends Component {
                           </ol>      
 
                       </Col>
-                 </Container>
+                 </Container><br></br> <br></br> <br></br>
              </div>         
         )
     }

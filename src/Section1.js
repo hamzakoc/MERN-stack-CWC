@@ -100,24 +100,24 @@ const Section1 = (props) => {
                             </Carousel>
                         </div>
                         <div class="col-md-7 carousel-text ">
-                            <h4>Kanada Karsilama Merkezi</h4>
+                            <h1>Kanada Karşılama Merkezi</h1>
                                         <h4 class="subheading">Biz kimiz ?</h4>
                         <p className="section1-text">Northern Lights Relief Foundation  gönüllü grubu, Kanada'ya yeni gelenlerin
                         bu yeni ülkede ilk sorunlarını çözmeleri için yeni bir fırsat yaratmak üzere bir araya geldi. Northern Lights Relief Foundation, 
                         insani yardım ve mülteci çabalarında işbirliği yapmak için gönüllü ekiplerini bir araya getiren kar amacı gütmeyen bir organizasyondur.
                          Bu ekipler ailelerin ihtiyaçlarına maddi, duygusal ve fiziksel olarak yardım etmeyi ve yeni gelenlere hem entegrasyon hem de yerleşim 
-                         anlamında yerleşmelerine yardımcı olmak için bir dizi destek sunar.
+                         anlamında yerleşmelerine yardımcı olmak için bir dizi destek sunmaktadır.
                         </p>
                         </div>
                     </div>
                     <br></br><br></br><br></br>
                     <div class="row ">
                         <div class="col-md-5 boxshadow">
-                            <h4>Ne yapiyoruz ?</h4>
+                            <h4>Ne yapıyoruz ?</h4>
                                        
-                                        <p className="section1-text">Karsilama Merkezi, çalışanlarına ve gönüllülerine yardım etmek, toplumun her bir üyesinin 
-                                        topluluklarına, herhangi bir şekilde veya hiçbir şekilde yargılama veya 
-                                            ayrımcılık kabul etmeyen, hoş ve saygılı bir ortamda geri dönebileceğine inanmaktadır.</p>
+                                        <p className="section1-text">Karşılama Merkezi, çalışanlarına ve gönüllülerine yardım etmek, toplumun her bir üyesinine, 
+                                        herhangi bir şekilde veya hiçbir şekilde yargılamayı veya 
+                                            ayrımcılıgı kabul etmeyen, hoş ve saygılı bir ortamda çalışan gönüllü bir kuruluştur.</p>
                         </div>
                         <div class="col-md-5 ">
                             <img src={neyapiyoruz} class="main-image" alt=""/>
@@ -131,9 +131,11 @@ const Section1 = (props) => {
                         </div>
                         
                         <div class="col-md-7 ">
-                            <h4>İnsanlığı şefkatli bir yürekle kucaklamanın önemini anlarken, katkılarımızı ve gönüllülüğümüzü Kanada'nın ötesine taşıyoruz..</h4>
+                            <h4>Katkılarımızı  Kanada'nın ötesine taşıyoruz..</h4>
                                        
-                                        <p className="section1-text">İnsanların yardımında yerel ve uluslararası alanda işbirliği yapmak için gönüllü ekiplerimiz ile buradayiz.</p>
+                                        <p className="section1-text">İnsanlığı şefkatli bir yürekle kucaklamanın önemini anlarken, katkılarımızı ve gönüllülüğümüzü 
+                                        Kanada'nın ötesine taşıyoruz..
+                                          İnsanların yardımında yerel ve uluslararası alanda işbirliği yapmak için gönüllü ekiplerimiz ile buradayız.</p>
                         </div>
                     </div>
 
@@ -143,7 +145,7 @@ const Section1 = (props) => {
                             <h4>Entegrasyon</h4>
                                         
                                         <p className="section1-text">Hem entegrasyon hem de yerleşim açısından yeni yerleşenlere yardım ediyoruz.
-                                        Ailelerin ihtiyaçlarına maddi, duygusal ve fiziksel olarak yardım etmeyi teklif eden bir dizi destek sağlamak icin burdayiz.</p>
+                                        Ailelerin ihtiyaçlarına maddi, duygusal ve fiziksel olarak yardım etmeyi teklif eden bir dizi destek sağlamak için burdayız.</p>
                         </div>
                         <div class="col-md-7">
                             <img class="main-image" src={entegrasyon}  alt=""/>
@@ -159,13 +161,13 @@ const Section1 = (props) => {
           <div className="rightcolumn">
 
                         <div className="card rigtcol boxshadow">
-                          <h2 className="rigtcol-h">Siginmacilar</h2>
+                          <h2 className="rigtcol-h">SIĞINMACILAR</h2>
                           
                           <p>Dünya, tarihteki en kötü mülteci krizine tanık oluyor… Dünya genelinde 65 milyondan fazla insan zorla yerlerinden ediliyor. Yani, 
                             dünyadaki 113 kişiden 1'i bu kategorilerden birine giriyor.
                              Savaşlar, çatışmalar, dini / politik zulüm ve insan hakları ihlalleri insanları evlerinden ve topluluklarından kaçmaya ve başka bir yerde yeni 
                              bir hayata başlamaya zorlar. Hayatlarına sıfırdan başlamak zorunda kalan bu mülteciler çoğu zaman temel insan gereksinimlerini bile almakta zorlanıyor.
-                              Yardim icin</p>
+                              Yardım için</p>
                              <a href="/yardim"><Button className="btn btn-info">Tıklayınız</Button></a>
                         </div>
 
@@ -175,16 +177,16 @@ const Section1 = (props) => {
                         </div>
 
                         <div className="card  rigtcol boxshadow">
-                          <h3 className="rigtcol-h">Egitim</h3>
-                          <p>Bugün dünya çapında 103 milyon genç hala temel okuryazarlık becerisine sahip değil ve bunların% 60'ından fazlası kız. Birleşmiş Milletler'in 
+                          <h3 className="rigtcol-h">EĞİTİM</h3>
+                          <p>Bugün dünya çapında 103 milyon genç hala temel okuryazarlık becerisine sahip değil ve bunların % 60'ından fazlası kız. Birleşmiş Milletler'in 
                             sürdürülebilir kalkınma hedeflerinden biri, 2030 yılına kadar tüm kız ve erkek çocuklarının ücretsiz, eşit ve kaliteli 
-                            ilk ve orta öğretimi tamamlamasını sağlamaktır.Daha fazla bilgi icin</p>
+                            ilk ve orta öğretimi tamamlamasını sağlamaktır. Daha fazla bilgi icin</p>
                             <a href="/cocuklaricinokullar"><Button className="btn btn-info">Tıklayınız</Button></a>
                         </div>
 
                         <div className=" card rigtcol boxshadow">
-                          <h3 className="rigtcol-h">Projelerimiz</h3>
-                          <p> Projemizin amaci, devam eden projelerimize toplumun katılımını ve ilgisini teşvik etmektir. 
+                          <h3 className="rigtcol-h">PROJELERİMİZ</h3>
+                          <p> Projemizin amacı, devam eden projelerimize toplumun katılımını ve ilgisini teşvik etmektir. 
                           Northern Lights Relief Foundation  ile bir proje kurarak, ihtiyacı olanlara yardım etmek için dünya çapında bir çabaya katkıda bulunuyoruz. Daha fazla bilgi icin</p>
                           <a href="/hakkimizda"><Button className="btn btn-info">Tıklayınız</Button></a>
                         </div>

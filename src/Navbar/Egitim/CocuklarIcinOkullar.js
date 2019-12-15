@@ -33,7 +33,7 @@ export default class BizeUlasin extends Component {
                             <p>Telefon: 647-382-97-76 Abdullah Fıstık Bey (Müdür)</p>
                             <p>Daha Fazla bilgi için <a href="https://nileacademy.ca/" target="_blank">tıklayınız</a></p>
                  </Col>
-            </Container>
+            </Container><br></br> <br></br> <br></br>
             </div>
         )
     }

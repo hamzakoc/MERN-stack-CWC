@@ -10,7 +10,7 @@ export default class Alisveris extends Component {
              <Row>
                  <div>
                  <h1>Alışveriş</h1>
-                 <br></br>
+                
                
                  <p>Bakkal tarzı esnaflar pek  bulunmamaktadır.Genellikle büyük alışveriş merkezleri mevcut. 
                      Aradığınız çoğu şeyi buralardan bulabilirsiniz. Müslümanlar için özel üretim helal gıdalar
@@ -37,7 +37,7 @@ export default class Alisveris extends Component {
                  </div>
                 </Row>
             </Col>
-        </Container>
+        </Container>  <br></br> <br></br> <br></br>
             </div>
         )
     }

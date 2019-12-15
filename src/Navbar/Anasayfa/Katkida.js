@@ -33,6 +33,7 @@ export default class Katkida extends Component {
                                         Bağış Yapın
                                     </Button></a>
                                     </ButtonToolbar>
+                                    <br></br> <br></br> <br></br>
                             </div>
                          </div>
                          </Row>

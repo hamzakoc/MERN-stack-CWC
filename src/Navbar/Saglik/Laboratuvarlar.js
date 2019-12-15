@@ -80,7 +80,7 @@ export default class Laboratuvarlar extends Component {
                             </div>
                         </Row>
                     </Col>
-                </Container>
+                </Container><br></br> <br></br> <br></br>
             </div>
         )
     }

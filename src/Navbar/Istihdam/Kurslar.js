@@ -5,10 +5,9 @@ export default class Kurslar extends Component {
         return (
             <div>
             
-            <br></br><br></br>
                 <Container>
                       <Col>
-                      <h2>DİL KURSU</h2>
+                      <h1>DİL KURSU</h1>
                       <p>Toronto’da sarı kağıdı aldıktan sonra devlet tarafından ücretsiz sağlanan İngilizce kursları vardır. 
                           Bu kurslar şu şekilde sıralandıralabilir;</p>
                           <ol>
@@ -45,7 +44,7 @@ export default class Kurslar extends Component {
                               gerekmektedir. Welcome Centerlar İngilizce seviyeniz en az 4 
                               olunca, sizin yerinize iş başvuruları yapmaktadır</p>
                       </Col>
-                </Container>            
+                </Container>          <br></br> <br></br> <br></br>  
              </div>
         )
     }

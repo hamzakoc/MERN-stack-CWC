@@ -10,7 +10,7 @@ export default class Marketler extends Component {
              <Row>
                  <div>
                  <h1>Marketler</h1>
-                 <br></br>
+           
                  <p><strong>Ünlü Toronto Marketleri</strong></p>
                  <p>Toronto'da ihtiyaçlarınızı karşılamak için çeşitli ürün, fiyat ve hizmetler sunan 
                      çok sayıda market vardır.Gıda pazarlarında taze ürünler 
@@ -34,7 +34,7 @@ export default class Marketler extends Component {
                  </div>
                 </Row>
             </Col>
-        </Container>
+        </Container>  <br></br> <br></br> <br></br>
             </div>
         )
     }

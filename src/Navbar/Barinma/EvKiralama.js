@@ -7,8 +7,8 @@ export default class BizeUlasin extends Component {
             <div>
                 <Container>
                     <Col>
-                    <br></br><br></br>
-                    <h2>EV KIRALAMA VE GECICI KONAKLAMA</h2>
+                    
+                    <h1>EV KIRALAMA VE GECICI KONAKLAMA</h1>
                     <p>Greater Toronto Area (GTA) (Büyük Toronto Bölgesi) da ev 
                         kiralamak için Emlakçılardan yada kendi kendinize dolaşarak ev
                         bakabilirsiniz. Ancak kendi kendinize daha çok Apartmanlardan 
@@ -51,7 +51,7 @@ export default class BizeUlasin extends Component {
                         
                         </ul>
                     </Col>
-                </Container>
+                </Container><br></br> <br></br> <br></br>
             </div>
         )
     }

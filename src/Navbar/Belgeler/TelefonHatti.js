@@ -16,7 +16,7 @@ export default class TelefonHatti extends Component {
                         <h5>Kanada’da cep telefonu iletişimini sağlayan şirketler hizmet kalitelerine 
                             göre 3 sınıfta gruplandırılır. Cep telefonu hattınızı
                             alırken buna göre karar vermeliniz:</h5>
-                            <p><br></br>
+                            <p>
                              <strong>Yüksek Kalite:</strong> Kanada’nın en büyük şürketleri olan <strong>Rogers, Bell ve Tellus</strong> tarafından sağlanan hatlardır. Paketin içeriğine
                         göre değişmekle birlikte, bunlar diğer kalitedeki hatlara göre çekim kalitesi olarak çok daha üstün ancak ücret olarak da
                         daha pahalıdır.
@@ -46,6 +46,7 @@ export default class TelefonHatti extends Component {
 
                     </Col>
                 </Container>
+                <br></br> <br></br> <br></br>
             </div>
         )
     }

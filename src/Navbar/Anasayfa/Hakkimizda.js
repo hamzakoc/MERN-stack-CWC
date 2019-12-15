@@ -31,6 +31,7 @@ export default class Hakkimizda extends Component {
                                   şekillerde katkıda bulunarak yardımcı olmaları için teşvik ediyoruz; bağışlar,
                                    gönüllü olarak etkinliklere katılmak ve faaliyetlerimiz hakkında başkalarını 
                                    bilgilendirmek.</p>
+                                   <br></br> <br></br> <br></br>
                         </Row>
                     </Col>
                     </Container>

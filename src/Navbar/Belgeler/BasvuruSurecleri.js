@@ -5,13 +5,13 @@ export default class BasvuruSurecleri extends Component {
     render() {
         return (
             <div>
-                <br></br><br></br>
+                
                 <Container>
                       <Col>
                 <h1>MAHKEME İŞLEMLERİ</h1>
-                <br></br>
+             
 	                <h4>Mahkeme işlemlerine baslangıç üç farklı şekilde olmaktadır ;</h4>  
-                    <br></br>
+                    
                     <ul>
 
                     <li><strong>Montreal den border'dan geçip gelenlerle alakalı 
@@ -88,7 +88,7 @@ export default class BasvuruSurecleri extends Component {
                     </Col>
               </Container>
 
-              <br></br><br></br>
+              <br></br><br></br>  <br></br> 
             </div>
         )
     }

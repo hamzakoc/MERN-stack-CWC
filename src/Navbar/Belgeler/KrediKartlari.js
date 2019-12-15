@@ -44,7 +44,7 @@ export default class KrediKartlari extends Component {
                                 width="100" height="100"></img></a>
                     
                     </Col>
-                </Container>
+                </Container>  <br></br> <br></br> <br></br>
             </div>
         )
     }

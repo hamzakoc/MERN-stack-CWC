@@ -36,7 +36,7 @@ export default class SeyehatBelgeleri extends Component {
 
                      </Row>
                     </Col>
-                </Container>
+                </Container>  <br></br> <br></br> <br></br>
                  </div>
         )
     }

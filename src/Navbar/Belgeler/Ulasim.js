@@ -22,7 +22,7 @@ export default class Ulasim extends Component {
                         <p> Toronto metro haritası için<a href="http://www.ttc.ca/PDF/Maps/Subway_Map.pdf" target="_blank"> tıklayınız</a> </p> 
                         <p> Toronto otobüs rotaları için<a href="http://www.ttc.ca/Routes/Buses.jsp" target="_blank"> tıklayınız</a> </p> 
                         <p> Toronto tramvay rotoları için<a href="http://www.ttc.ca/Routes/Streetcars.jsp" target="_blank"> tıklayınız</a> </p> 
-                        <br></br><br></br>
+                        <br></br>
                           <h3>Havalimanından Şehir Merkezine Ulaşım</h3>   
                           <p>
                           Büyük bir şehir olan Toronto’da üç havalimanı bulunmakta fakat bunlardan
@@ -39,6 +39,7 @@ export default class Ulasim extends Component {
                         </Row>
                     </Col>
                 </Container>
+                <br></br> <br></br> <br></br>
                 </div>
         )
     }

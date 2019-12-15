@@ -34,7 +34,7 @@ export default class Sigortalar extends Component {
 
                      </Row>
                     </Col>
-                </Container>
+                </Container>  <br></br> <br></br> <br></br>
                  </div>
         )
     }

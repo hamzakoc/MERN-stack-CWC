@@ -38,13 +38,10 @@ export default class EvInterneti extends Component {
                            <p><a href="https://www.findinternet.ca/en/toronto-ontario" target="_blank">Buradan </a>detaylı internet tarifelerine ulaşabilirsiniz</p>
                          </div>
                          
-                     
-
-                           
 
                         </Row>
                     </Col>
-                </Container>
+                </Container>  <br></br> <br></br> <br></br>
                  </div>
         )
     }

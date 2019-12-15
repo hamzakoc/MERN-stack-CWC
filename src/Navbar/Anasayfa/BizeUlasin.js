@@ -21,6 +21,8 @@ export default class BizeUlasin extends Component {
                 </Container>
 
                 <FormPage/>
+
+                <br></br> <br></br> <br></br>
                     
             </div>
         )

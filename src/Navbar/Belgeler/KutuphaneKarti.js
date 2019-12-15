@@ -29,22 +29,17 @@ export default class KutuphaneKarti extends Component {
                               gibi çok çeşitli konulara sahip programlara katılabilrisiniz.</li>
                         <li>Kütüphane çalışanlarıyla iletişime geçebilirsiniz. Bir çok dil 
                             için çevirmenlere erişim mevcuttur.</li>
-
                     
                       </ul>
                  
-                                 
-
                    <p><a href="https://www.torontopubliclibrary.ca/" target="_blank">Buradan </a>detaylı bilgilere ulaşabilirsiniz</p>
                  </div>
                  
-             
-
-                   
-
+                 <br></br> <br></br> <br></br>
                 </Row>
             </Col>
         </Container>
+        
         )
     }
 }

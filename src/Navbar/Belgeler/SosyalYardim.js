@@ -42,7 +42,7 @@ export default class SosyalYardim extends Component {
                  </Col>
             </Container>
              
-             
+            <br></br> <br></br> <br></br>
              
              </div>
         )

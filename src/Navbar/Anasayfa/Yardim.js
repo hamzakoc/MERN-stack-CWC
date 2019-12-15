@@ -21,6 +21,7 @@ export default class Yardim extends Component {
                     </Container>
                     <br></br><br></br><br></br>
                     <FormPage/>
+                    <br></br> <br></br> <br></br>
 
                 
             </div>

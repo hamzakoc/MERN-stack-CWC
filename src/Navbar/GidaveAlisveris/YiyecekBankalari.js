@@ -10,7 +10,7 @@ export default class YiyecekBankalari extends Component {
              <Row>
                  <div>
                  <h1>Gıda ve Yiyecek Bankaları</h1>
-                 <br></br>
+                 
                  <p>Gıda Bankaları, Kanada'nın her il ve bölgesindede, her ay 800.000'den fazla kişiye 
                       3.000'in üzerinde kuruluşla gıda ile ilgili benzersiz bir yardım ağı düzenlemektedir. 
                      Temel, güvenli ve kaliteli gıdalar paylaşıp, kendi kendine yeterliliği geliştirmeye yardımcı 
@@ -35,7 +35,7 @@ export default class YiyecekBankalari extends Component {
                  </div>
                 </Row>
             </Col>
-        </Container>
+        </Container>  <br></br> <br></br> <br></br>
             </div>
         )
     }

@@ -10,7 +10,7 @@ export default class GidaBakimi extends Component {
              <Row>
                  <div>
                  <h1>Gıda Bakımı</h1>
-                 <br></br>
+                
                  <p><strong>Özel diyet gereksinimlerim varsa ne yapmalıyım?</strong></p>
                  <p>Diyabet gibi özel diyet endişeleriniz varsa veya vejeteryansanız, gıda bankası personeline söyleyebilirsiniz. 
                      Bazı gıda bankaları belirli dini gruplara hizmet eder ve helal veya koşer gıdaları gibi dini beslenme 
@@ -33,7 +33,7 @@ export default class GidaBakimi extends Component {
                  </div>
                 </Row>
             </Col>
-        </Container>
+        </Container><br></br> <br></br> <br></br>
             </div>
         )
     }

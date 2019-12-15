@@ -25,7 +25,7 @@ export default class KiralamaAlimSatim extends Component {
                             </ul>
                             <p>gibi  belgeler ev sahipleri tarfından istenebilir</p>
 
-                            <h1>Araç Kiralama veya Satın Alma</h1>
+                            <h2>Araç Kiralama veya Satın Alma</h2>
                             <p>1-Nakit :  Nakit olarak ödemelerde daha uygun şartlarda araçlar bulunabilir.<br></br>
                                 2-Banka Kredisi : Bir çok kişi araba için banka kredisi çekerek bir kısmını yada tamamını ödeyerek satın alıyor.
                                  Aylık taksitler ile geri ödeme şartları bulunmaktadır.<br></br>
@@ -37,7 +37,7 @@ export default class KiralamaAlimSatim extends Component {
 
                      </Row>
                     </Col>
-                </Container>
+                </Container>  <br></br> <br></br> <br></br>
                  </div>
         )
     }

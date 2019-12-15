@@ -10,7 +10,7 @@ export default class GiysiMagazalari extends Component {
              <Row>
                  <div>
                  <h1>Giysi Mağazaları</h1>
-                 <br></br>
+                 
                
                  <p>Kıyafet ve Giyim, yeni gelmiş olanlar veya gelmeyi düşünenler için büyük önem taşımaktadır.
                       Kanadada çoğu markanın fabrika satış mağazaları bulunmaktadır. İnternet üzerinden bir çok outlet mağazasını
@@ -46,7 +46,7 @@ export default class GiysiMagazalari extends Component {
                  </div>
                 </Row>
             </Col>
-        </Container>
+        </Container>  <br></br> <br></br> <br></br>
             </div>
         )
     }

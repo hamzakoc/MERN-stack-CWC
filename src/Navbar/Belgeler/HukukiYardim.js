@@ -11,7 +11,7 @@ export default class HukukiYardim extends Component {
                      <Row>
                          <div>
                          <h1>Hukuki Yardım</h1>
-                         <br></br>
+                         
                          <p>Gelir seviyesi düşük bireyler için Ontario eyaletinin hukuksal yardım imkanları bulunmaktadır.</p>
                          <h3>Nasıl başvuru yapabirilirim ?</h3>
                          <p> 416-979-1446 veya 1-800-668‑8258 numaraları ile Pazartesiden Cumaya, 08.00 - 17.00 saatleri 
@@ -31,9 +31,11 @@ export default class HukukiYardim extends Component {
                         </ul> 
                               
                          </div>
+                         
                         </Row>
                     </Col>
                 </Container>
+                <br></br> <br></br> <br></br>
             </div>
         )
     }

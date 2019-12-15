@@ -33,8 +33,10 @@ export default class Gonullu extends Component {
                                         Gönüllü Formu
                                     </Button></a>
                                     </ButtonToolbar>
+                                    <br></br> <br></br> <br></br>
                             </div>
                          </div>
+                         
                          </Row>
                     </Col>
                 </Container>

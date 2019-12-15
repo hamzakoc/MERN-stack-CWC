@@ -10,7 +10,7 @@ export default class GeciciBarınma extends Component {
              <Row>
                  <div>
                  <h1>Gecici Barınma</h1>
-                 <br></br>
+              
                  <p>İçerik üretiliyor.Anlayışınız için teşekkür ederiz...</p>
                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus mauris eu 
                      nisl commodo condimentum. Maecenas elit mi, mattis in pretium eu, lacinia vel lacus.
@@ -42,7 +42,7 @@ export default class GeciciBarınma extends Component {
                  </div>
                 </Row>
             </Col>
-        </Container>
+        </Container><br></br> <br></br> <br></br>
             </div>
         )
     }

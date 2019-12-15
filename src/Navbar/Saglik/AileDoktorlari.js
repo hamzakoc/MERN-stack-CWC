@@ -5,13 +5,11 @@ export default class AileDoktorlari extends Component {
     render() {
         return (
             <div>
-            
-            <br></br><br></br>
+          
                 <Container>
                       <Col>
                        
-                          
-                              <p><strong>Aile Hekimi (Family Doctor)</strong> </p>
+                              <h1>Aile Hekimi (Family Doctor) </h1>
                               <p>Aile hekimi de mahkeme sonrasi OHIP kapsaminda yararlanilacak hizmetlerden birisidir. 
                                   Genel olarak saglik sorunlarinizla ilgilenecek bir GP Pratisyen Hekim e duzenli araliklarla gidilebilir. 
                                   Bu hekimi secerken farkli yollar kullanilabilir. Mahallenizde veya size yakin yerlerdeki, arkadaslarinizdan 
@@ -34,7 +32,7 @@ export default class AileDoktorlari extends Component {
                              
 
                       </Col>
-                 </Container>
+                 </Container><br></br> <br></br> <br></br>
              </div>         
         )
     }

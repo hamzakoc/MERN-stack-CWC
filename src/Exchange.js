@@ -54,29 +54,29 @@ componentDidMount(){
         <header className="">
          
                  
-                   <h2 className="exc-header">Currency Convertor</h2>
-                   <p>This converter is based on Canadian Dollar. Enter a value to see recent amount</p>
+                   <h2 className="exc-header">Döviz Çevirici</h2>
+                   <p>Bu çevirici 1 Kanada Dolarına sabitlenmiştir. Canlı kuru görmek için bir rakam giriniz.</p>
                       <p >CAD <input onChange={this.handleInput} value={this.state.value}></input> </p>
                       
                   
                     <table className="exc-table" dark>
                         <thead >
                             
-                            <th>Currency</th>
-                            <th>Amount</th>
+                            <th>Para Birimi</th>
+                            <th>Tutar</th>
                             <th>Recently</th>
                             
                         </thead>
                         <tbody>
                             <tr>
                            
-                            <td>Turk Lirasi </td>
+                            <td>Türk Lirası </td>
                             <td>{Number(Math.round(this.state.value*this.state.currentUSDCurrency.TRY*100)/100)}</td>
                             <td>{ ' TRY = '}{Number(Math.round(this.state.currentUSDCurrency.TRY*100)/100)}</td>
                             </tr>
                             <tr>
                             
-                            <td>ABD Dolari</td>
+                            <td>ABD Doları</td>
                             <td>{Number(Math.round(this.state.value*this.state.currentUSDCurrency.USD*100)/100)}</td>
                             <td>{ ' USD = '}{Number(Math.round(this.state.currentUSDCurrency.USD*100)/100)}</td>
                             </tr>

@@ -42,7 +42,7 @@ export default class KanadaKulturu extends Component {
                  </div>
                 </Row>
             </Col>
-        </Container>
+        </Container><br></br> <br></br> <br></br>
             </div>
         )
     }
