@@ -6,7 +6,7 @@ import FooterPage from './FooterPage'
 import { Col} from 'reactstrap';
 import Section1 from './Section1'
 import Section2 from './Section2'
-import Admin from './Admin'
+import Admin from './components/Admin'
 
 import './css/app.css';
 

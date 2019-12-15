@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button, } from 'reactstrap';
-import Map from './Navbar/Map/Map.js'
+
 
 const FormPage = () => {
   return (

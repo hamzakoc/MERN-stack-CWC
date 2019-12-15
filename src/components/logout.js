@@ -1,5 +1,5 @@
 import React from "react";
-import auth from "./components/auth";
+import auth from "./auth";
 
 export const AppLayout = props => {
   return (
