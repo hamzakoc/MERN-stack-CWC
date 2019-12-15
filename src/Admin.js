@@ -8,6 +8,15 @@ import ExercisesList from "./components/exercises-list.component.js";
 import EditExercise from "./components/edit-exercise.component";
 import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
+import Login from "./components/login.component";
+import Logout from "./app.layout";
+
+
+
+// import { LandingPage } from "./landing.page";
+// import { AppLayout } from "./app.layout";
+import { ProtectedRoute } from "./components/protected.route";
+
 
 
 function Admin() {
@@ -15,7 +24,7 @@ function Admin() {
   const newsstyle = {
     
     paddingTop: "100px",
-    paddingBottom: "100px"
+    paddingBottom: "100px",
       };
 
 
@@ -29,10 +38,13 @@ function Admin() {
       <div className="container">
       <Navbar />
       <br/>
-      <Route path="/admin" exact component={ExercisesList} />
-      <Route path="/admin/edit/:id" component={EditExercise} />
-      <Route path="/admin/create" component={CreateExercise} />
-      <Route path="/admin/user" component={CreateUser} />
+      <ProtectedRoute path="/admin" exact component={ExercisesList} />
+      <ProtectedRoute path="/admin/edit/:id" component={EditExercise} />
+      <ProtectedRoute path="/admin/create" component={CreateExercise} />
+      <ProtectedRoute path="/admin/user" component={CreateUser} />
+      <Route path="/login" component={Login} />
+      <Route path="/logout" component={Logout} />
+
       </div>
     </Router>
     </Card>

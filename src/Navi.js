@@ -102,6 +102,8 @@ import Section1 from './Section1'
 
 import Admin from './Admin'
 
+
+
 export default class Navi extends React.Component {
   constructor(props) {
     super(props);
@@ -138,6 +140,8 @@ export default class Navi extends React.Component {
           
           <NavbarBrand  style={navstyle} href="/"><img src={logo} width="40" height="40"></img></NavbarBrand>
           <NavbarBrand style={newsstyle} href="/admin"></NavbarBrand>
+          
+
           {/* <Link to="/m"><div className="navwelcome">Canada Welcome Center   ||</div></Link> */}
           <NavbarToggler  onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -252,6 +256,7 @@ export default class Navi extends React.Component {
            <Route path="/" exact ><Section1/><Section3/><Section2/></Route>
            
            <Route path="/admin"><Admin/></Route>
+           
 
           {/* Anasayfa */}
           <Route path="/hakkimizda"><Hakkimizda/></Route>
