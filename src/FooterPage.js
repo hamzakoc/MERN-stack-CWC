@@ -26,11 +26,11 @@ const FooterPage = () => {
    <div className="page-footer font-small unique-color-dark">
              <div style={navcolor} className="text-center text-white "  >           
                     
-                    <div className=" bg-danger">
+                    <div className=" footer">
                             <div className="container ">      
                                 <div className=" container py-2 d-flex align-items-center">
                                     <div className="col-md-6 col-lg-5 text-center  mb-4 mb-md-0">
-                                        <h6 className="mb-0">Get connected with us on social networks!</h6>
+                                        <h6 className="mb-0">Bizi sosyal medyadan takip edin!</h6>
                                     </div>
                                     <div className="col-md-6 col-lg-7 text-center text-md-right" style={itemscolor}>
                                                                                                                
@@ -66,10 +66,10 @@ const FooterPage = () => {
                         </div>
 
                         <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 className="text-uppercase font-weight-bold">Useful links</h6>
+                        <h6 className="text-uppercase font-weight-bold">Faydali Linkler</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" ></hr>
-                        <p><a href="#!">Ask questions</a></p>
-                        <p><a href="#!">Help</a></p>
+                        <p><a href="/bizeulasın">Soru Sorun</a></p>
+                        <p><a href="/Yardim">Yardim</a></p>
                         </div>
 
                         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

@@ -50,44 +50,44 @@ componentDidMount(){
 
   render() {
   return (
-    <div className="ap">
-        <header className="App-heade">
+    <div className="exc-background">
+        <header className="">
          
                  
-                   <h2 >Currency Convertor</h2>
+                   <h2 className="exc-header">Currency Convertor</h2>
                    <p>This converter is based on Canadian Dollar. Enter a value to see recent amount</p>
                       <p >CAD <input onChange={this.handleInput} value={this.state.value}></input> </p>
                       
                   
-                    <Table dark>
+                    <table className="exc-table" dark>
                         <thead >
                             
                             <th>Currency</th>
                             <th>Amount</th>
-                            <th>Currency of 1</th>
+                            <th>Recently</th>
                             
                         </thead>
                         <tbody>
                             <tr>
                            
                             <td>Turk Lirasi </td>
-                            <td>{this.state.value*this.state.currentUSDCurrency.TRY}</td>
-                            <td>{ ' TRY ='}{this.state.currentUSDCurrency.TRY}</td>
+                            <td>{Number(Math.round(this.state.value*this.state.currentUSDCurrency.TRY*100)/100)}</td>
+                            <td>{ ' TRY = '}{Number(Math.round(this.state.currentUSDCurrency.TRY*100)/100)}</td>
                             </tr>
                             <tr>
                             
-                            <td>USD</td>
-                            <td>{this.state.value*this.state.currentUSDCurrency.USD}</td>
-                            <td>{ ' USD ='}{this.state.currentUSDCurrency.USD}</td>
+                            <td>ABD Dolari</td>
+                            <td>{Number(Math.round(this.state.value*this.state.currentUSDCurrency.USD*100)/100)}</td>
+                            <td>{ ' USD = '}{Number(Math.round(this.state.currentUSDCurrency.USD*100)/100)}</td>
                             </tr>
                             <tr>
                            
                             <td>EURO</td>
-                            <td>{this.state.value*this.state.currentUSDCurrency.EUR}</td>
-                            <td>{ ' EUR ='}{this.state.currentUSDCurrency.EUR}</td>
+                            <td>{Number(Math.round(this.state.value*this.state.currentUSDCurrency.EUR*100)/100)}</td>
+                            <td>{ ' EUR = '}{Number(Math.round(this.state.currentUSDCurrency.EUR*100)/100)}</td>
                             </tr>
                         </tbody>
-                    </Table>
+                    </table>
               
         
       </header>

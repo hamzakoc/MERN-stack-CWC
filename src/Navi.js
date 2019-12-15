@@ -94,10 +94,13 @@ import Topluluklar from './Navbar/OzelBakim/Topluluklar';
 import Imkanlar from './Navbar/OzelBakim/Imkanlar';
 import Organizasyonlar from './Navbar/OzelBakim/Organizasyonlar';
 
+import Section3 from './Section3'
 
-import Main from './Main'
+import Section2 from './Section2'
 
-import CardApi from './CardApi'
+import Section1 from './Section1'
+
+import Admin from './Admin'
 
 export default class Navi extends React.Component {
   constructor(props) {
@@ -121,23 +124,27 @@ export default class Navi extends React.Component {
       paddingLeft: "30px"
         };
    
-
+        const newsstyle = {
+          color: "white",
+          paddingTop: "30px"
+            };
 
     return (
 
       <Router>
       <div>
         
-        <Navbar className="navbarfixed"   light expand="md">
+        <Navbar className="navbarfixed navbar"   light expand="md">
           
-          <NavbarBrand  style={navstyle} href="/m"><img src={logo} width="40" height="40"></img></NavbarBrand>
-          <Link to="/m"><div className="navwelcome">Canada Welcome Center   ||</div></Link>
+          <NavbarBrand  style={navstyle} href="/"><img src={logo} width="40" height="40"></img></NavbarBrand>
+          <NavbarBrand style={newsstyle} href="/admin"></NavbarBrand>
+          {/* <Link to="/m"><div className="navwelcome">Canada Welcome Center   ||</div></Link> */}
           <NavbarToggler  onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav  navbar>              
               <UncontrolledDropdown inNavbar >
                 <DropdownToggle style={navstyle} nav  >Anasayfa</DropdownToggle>
-                  <DropdownMenu className="navbackcolor"  >
+                  <DropdownMenu className="navbackcolor " onClick={this.toggle}  >
                         <DropdownItem> <Link to="/hakkimizda" className="navcolor " >Hakkımızda</Link></DropdownItem>
                         <DropdownItem><Link to="/yardim" className="navcolor">Yardıma ihtiyacınız mı var?</Link></DropdownItem>
                         <DropdownItem> <Link to="/gonullu" className="navcolor">Gönüllü Olun!</Link></DropdownItem>
@@ -147,7 +154,7 @@ export default class Navi extends React.Component {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle style={navstyle} nav >Belgeler</DropdownToggle>
-                  <DropdownMenu  className="navbackcolor">
+                  <DropdownMenu  className="navbackcolor" onClick={this.toggle}>
                         <DropdownItem> <Link to="/basvurusurecleri" className="navcolor">Başvuru Süreçleri </Link></DropdownItem>
                         <DropdownItem> <Link to="/hukukiyardim" className="navcolor">Hukuki Yardım</Link></DropdownItem>
                         <DropdownItem> <Link to="/sosyalyardim" className="navcolor">Sosyal Yardım</Link></DropdownItem>
@@ -165,7 +172,7 @@ export default class Navi extends React.Component {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle style={navstyle} nav >Gıda ve Alışveriş</DropdownToggle>
-                  <DropdownMenu className="navbackcolor">
+                  <DropdownMenu className="navbackcolor" onClick={this.toggle}>
                         <DropdownItem> <Link to="/yiyecekbanklari" className="navcolor">Yiyecek Bankaları </Link></DropdownItem>
                         <DropdownItem> <Link to="/ozelgidalar" className="navcolor">Özel Gıdalar</Link></DropdownItem>
                         <DropdownItem> <Link to="/marketler" className="navcolor">Marketler</Link></DropdownItem>
@@ -176,7 +183,7 @@ export default class Navi extends React.Component {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle style={navstyle} nav >Sağlık</DropdownToggle>
-                  <DropdownMenu className="navbackcolor" >
+                  <DropdownMenu className="navbackcolor" onClick={this.toggle} >
                         <DropdownItem> <Link to="/saglikhizmetleri" className="navcolor">Sağlık Hizmetleri </Link></DropdownItem>
                         <DropdownItem> <Link to="/laboratuvarlar" className="navcolor">Laboratuvarlar </Link></DropdownItem>
                         <DropdownItem> <Link to="/ailedoktorlari" className="navcolor">Aile Doktorları </Link></DropdownItem>
@@ -187,7 +194,7 @@ export default class Navi extends React.Component {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle style={navstyle} nav >Barınma</DropdownToggle>
-                  <DropdownMenu className="navbackcolor">
+                  <DropdownMenu className="navbackcolor" onClick={this.toggle}>
                          <DropdownItem> <Link to="/gecicibarinma" className="navcolor">Geçici barınma </Link></DropdownItem>
                         <DropdownItem> <Link to="/evkiralama" className="navcolor">Ev Kiralama </Link></DropdownItem>
                         <DropdownItem> <Link to="/evsatinalma" className="navcolor">Ev Satın Alma </Link></DropdownItem>
@@ -196,7 +203,7 @@ export default class Navi extends React.Component {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle style={navstyle} nav >İstihdam</DropdownToggle>
-                  <DropdownMenu className="navbackcolor">
+                  <DropdownMenu className="navbackcolor" onClick={this.toggle}>
                        <DropdownItem> <Link to="/isbulmakurumlari" className="navcolor">İş Bulma Kurumları </Link></DropdownItem> 
                        <DropdownItem> <Link to="/denklik" className="navcolor">WES, ICAS (Denklik) </Link></DropdownItem>             
                        <DropdownItem> <Link to="/sertifikalar" className="navcolor">Sertifikalar </Link></DropdownItem> 
@@ -206,7 +213,7 @@ export default class Navi extends React.Component {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle style={navstyle} nav >Eğitim</DropdownToggle>
-                  <DropdownMenu className="navbackcolor" >
+                  <DropdownMenu className="navbackcolor" onClick={this.toggle}>
                        <DropdownItem> <Link to="/cocuklaricinokullar" className="navcolor">Çocuklar için Okullar</Link></DropdownItem> 
                        <DropdownItem> <Link to="/yetiskinlericinokullar" className="navcolor">Yetişkinler için Okullar </Link></DropdownItem>             
                        <DropdownItem> <Link to="/yazvekisokullari" className="navcolor">Yaz ve Kış Okulları </Link></DropdownItem> 
@@ -215,7 +222,7 @@ export default class Navi extends React.Component {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle style={navstyle} nav >Kültür ve Sosyal Hayat</DropdownToggle>
-                  <DropdownMenu className="navbackcolor" >
+                  <DropdownMenu className="navbackcolor" onClick={this.toggle}>
                        <DropdownItem> <Link to="/gonullucalismak" className="navcolor">Gönüllü Çalışmak </Link></DropdownItem> 
                        <DropdownItem> <Link to="/kanadakulturu" className="navcolor">Kanada Kültürü </Link></DropdownItem> 
                        <DropdownItem> <Link to="/gezilecekyerler" className="navcolor">Gezilecek Yerler </Link></DropdownItem> 
@@ -227,7 +234,7 @@ export default class Navi extends React.Component {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle style={navstyle} nav >Özel Bakım</DropdownToggle>
-                  <DropdownMenu className="navbackcolor">
+                  <DropdownMenu className="navbackcolor" onClick={this.toggle}>
                        <DropdownItem> <Link to="/devlethizmetleri"className="navcolor">Devlet Hizmetleri </Link></DropdownItem> 
                        <DropdownItem> <Link to="/ozelkuruluslar" className="navcolor">Özel Kuruluşlar</Link></DropdownItem> 
                        <DropdownItem> <Link to="/topluluklar" className="navcolor">Topluluklar</Link></DropdownItem> 
@@ -242,8 +249,9 @@ export default class Navi extends React.Component {
 
 
         <Switch>
-        <Route path="/m"><CardApi/><Main/></Route>
-        
+           <Route path="/" exact ><Section1/><Section3/><Section2/></Route>
+           
+           <Route path="/admin"><Admin/></Route>
 
           {/* Anasayfa */}
           <Route path="/hakkimizda"><Hakkimizda/></Route>

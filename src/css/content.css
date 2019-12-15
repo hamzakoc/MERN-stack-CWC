@@ -4,21 +4,31 @@ h1{
     color: rgb(8, 7, 34); 
     font-size: 40px; 
     font-weight: normal; 
-    line-height: 30px; 
- 
-    
     text-shadow: 1px 2px 2px #000; 
-     
     padding-top: 140px;
+    line-height: 1.6;
     
 }
+
+.h1:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    right: 15px;
+    width: 70%;
+    height: 10px;
+    background: rgba(0, 0, 0, .7);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .7);
+    transform: rotate(2deg);    
+  }
 
 h2 {
     
     color: rgb(8, 7, 34); 
     font-size: 35px; 
     font-weight: normal; 
-    line-height: 30px; 
+    line-height: 1.6;
     margin: 10px 0 20px; 
     text-shadow: 1px 1px 0 #000; 
     margin: 10px 0 24px; 
@@ -30,7 +40,7 @@ h3 {
     color: rgb(8, 7, 34); 
     font-size: 30px; 
     font-weight: normal; 
-    line-height: 30px; 
+    line-height: 1.6;
     margin: 10px 0 20px; 
     text-shadow: 1px 1px 0 #000; 
     margin: 10px 0 24px; 
@@ -43,7 +53,7 @@ h4 {
     color: rgb(8, 7, 34); 
     font-size: 25px; 
     font-weight: normal; 
-    line-height: 30px; 
+    line-height: 1.6;
     margin: 10px 0 20px; 
     text-shadow: 1px 1px 0 #000; 
     margin: 10px 0 24px; 
@@ -56,7 +66,7 @@ h5 {
     color: rgb(8, 7, 34); 
     font-size: 20px; 
     font-weight: normal; 
-    line-height: 30px; 
+    line-height: 1.6;
     margin: 10px 0 20px; 
     text-shadow: 1px 1px 0 #000; 
     margin: 10px 0 24px; 
@@ -65,8 +75,8 @@ h5 {
 
 p ul ol { color: #4c4a37; 
     font-family: 'Source Sans Pro', sans-serif; 
-    font-size: 16px; 
-    line-height: 32px; 
+    font-size: 14px; 
+    line-height: 1.6; 
     margin: 0 0 24px; }
 
 

@@ -1,7 +1,5 @@
 .app{
-    background-image: url(../component/background-images/a.jpg) ;
-    background-size: cover;
-    background-attachment: fixed;
+   
     margin: 0;
     padding: 0;
     color:rgba(red, green, blue, alpha);
