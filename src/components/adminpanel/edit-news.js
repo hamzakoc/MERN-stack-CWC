@@ -3,7 +3,7 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
-export default class EditExercise extends Component {
+export default class EditNews extends Component {
   constructor(props) {
     super(props);
 
@@ -18,7 +18,7 @@ export default class EditExercise extends Component {
   }
 
   componentDidMount=()=> {
-    axios.get('http://localhost:5000/admin/exercises/'+this.props.match.params.id)
+    axios.get('http://localhost:5000/admin/news/'+this.props.match.params.id)
       .then(response => {
         this.setState({
           username: response.data.username,
@@ -72,16 +72,16 @@ export default class EditExercise extends Component {
   onSubmit=(e)=> {
     e.preventDefault();
 
-    const exercise = {
+    const news = {
       username: this.state.username,
       title:this.state.title,
       description: this.state.description,
       date: this.state.date
     }
 
-    console.log(exercise);
+    console.log(news);
 
-    axios.post('http://localhost:5000/admin/exercises/update/' + this.props.match.params.id, exercise)
+    axios.post('http://localhost:5000/admin/news/update/' + this.props.match.params.id, news)
       .then(res => console.log(res.data));
 
     
@@ -90,7 +90,7 @@ export default class EditExercise extends Component {
   render() {
     return (
     <div>
-      <h3>Edit Exercise Log</h3>
+      <h3>Edit News</h3>
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
           <label>Username </label>
@@ -141,7 +141,7 @@ export default class EditExercise extends Component {
         </div>
 
         <div className="form-group">
-          <input type="submit" value="Edit Exercise Log" className="btn btn-primary" />
+          <input type="submit" value="Edit News" className="btn btn-info" />
         </div>
       </form>
     </div>

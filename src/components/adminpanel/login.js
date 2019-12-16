@@ -55,18 +55,19 @@ class LoginPage extends Component {
         <form onSubmit={this.handleSubmit}>
           {
             this.state.error &&
-            <h3 data-test="error" onClick={this.dismissError}>
+            <h6 data-test="error" onClick={this.dismissError}>
               <button onClick={this.dismissError}>✖</button>
               {this.state.error}
-            </h3>
+            </h6>
           }
-          <label>User Name</label>
+          <label>User Name</label><br></br>
           <input type="text" data-test="username" value={this.state.username} onChange={this.handleUserChange} />
+          <br></br>
 
-          <label>Password</label>
-          <input type="password" data-test="password" value={this.state.password} onChange={this.handlePassChange} />
+          <label>Password</label><br></br>
+          <input type="password" data-test="password" value={this.state.password} onChange={this.handlePassChange} /><br></br><br></br>
 
-          <input type="submit" value="Log In" data-test="submit" 
+          <input type="submit" value="Log In" data-test="submit" className=" btn-info"
           
           onClick={() => {
             if(this.state.username==="admin" && this.state.password==="123"){

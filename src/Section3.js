@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import {Card, Button, CardImg, CardTitle, CardText, CardDeck,CardSubtitle, CardBody, CardGroup, CardFooter} from 'reactstrap';
+
+import {Card, CardTitle, CardText, CardDeck, CardBody,CardFooter} from 'reactstrap';
 import axios from 'axios';
 
-const Exercise = props => (
+const News = props => (
   <div className="section3 "> 
  
  <CardDeck className="section3 ">
       <Card className="" >
     
         <CardBody >
-          <CardTitle  ><h3>{props.exercise.title}</h3></CardTitle>
+          <CardTitle  ><h3>{props.news.title}</h3></CardTitle>
           
-          <CardText>{props.exercise.description}</CardText>
+          <CardText>{props.news.description}</CardText>
           <CardFooter>
-      <small className="text-muted">Son güncelleme tarihi {props.exercise.date.substring(0,10)}</small>
+      <small className="text-muted">Son güncelleme tarihi {props.news.date.substring(0,10)}</small>
     </CardFooter>
         </CardBody>
       </Card>
@@ -25,18 +25,18 @@ const Exercise = props => (
 
 )
 
-export default class ExercisesList extends Component {
+export default class NewsList extends Component {
   constructor(props) { 
     super(props);
 
 
-    this.state = {exercises: []};
+    this.state = {news: []};
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/admin/exercises/')
+    axios.get('http://localhost:5000/admin/news/')
       .then(response => {
-        this.setState({ exercises: response.data })
+        this.setState({ news: response.data })
       })
       .catch((error) => {
         console.log(error);
@@ -44,9 +44,9 @@ export default class ExercisesList extends Component {
   }
 
 
-  exerciseList() {
-    return this.state.exercises.map(currentexercise => {
-      return <Exercise exercise={currentexercise}  key={currentexercise._id}/>;
+  newsList() {
+    return this.state.news.map(currentnews => {
+      return <News news={currentnews}  key={currentnews._id}/>;
     })
   }
 
@@ -58,7 +58,7 @@ export default class ExercisesList extends Component {
         </div>
 
         
-            { this.exerciseList() }
+            { this.newsList() }
         
       </div>
       

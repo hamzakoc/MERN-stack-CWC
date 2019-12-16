@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const exerciseSchema = new Schema({
+const newsSchema = new Schema({
   username: { type: String, required: true },
   title: { type: String, required: true },
   description: { type: String, required: true },
@@ -11,6 +11,6 @@ const exerciseSchema = new Schema({
   timestamps: true,
 });
 
-const Exercise = mongoose.model('Exercise', exerciseSchema);
+const News = mongoose.model('News', newsSchema);
 
-module.exports = Exercise;
+module.exports = News;

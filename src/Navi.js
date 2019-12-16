@@ -100,7 +100,7 @@ import Section2 from './Section2'
 
 import Section1 from './Section1'
 
-import Admin from './components/Admin'
+import Admin from './components/adminpanel/Admin'
 
 
 

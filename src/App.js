@@ -4,9 +4,7 @@ import React, { Component } from 'react'
 import Navi from './Navi'
 import FooterPage from './FooterPage'
 import { Col} from 'reactstrap';
-import Section1 from './Section1'
-import Section2 from './Section2'
-import Admin from './components/Admin'
+
 
 import './css/app.css';
 
@@ -21,9 +19,6 @@ export default class App extends Component {
         <Col>
         <Navi/>
       
-        
-     
-
         <FooterPage/>
         </Col>
         

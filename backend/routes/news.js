@@ -1,9 +1,9 @@
 const router = require('express').Router();
-let Exercise = require('../models/exercise.model');
+let News = require('../models/news.model');
 
 router.route('/').get((req, res) => {
-  Exercise.find()
-    .then(exercises => res.json(exercises))
+  News.find()
+    .then(news => res.json(news))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
@@ -14,39 +14,39 @@ router.route('/add').post((req, res) => {
  
   const date = Date.parse(req.body.date);
 
-  const newExercise = new Exercise({
+  const newNews = new News({
     username,
     title,
     description,
     date,
   });
 
-  newExercise.save()
+  newNews.save()
   .then(() => res.json('News added!'))
   .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/:id').get((req, res) => {
-  Exercise.findById(req.params.id)
-    .then(exercise => res.json(exercise))
+  News.findById(req.params.id)
+    .then(news => res.json(news))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/:id').delete((req, res) => {
-  Exercise.findByIdAndDelete(req.params.id)
+  News.findByIdAndDelete(req.params.id)
     .then(() => res.json('News deleted.'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/update/:id').post((req, res) => {
-  Exercise.findById(req.params.id)
-    .then(exercise => {
-      exercise.username = req.body.username;
-      exercise.title = req.body.title;
-      exercise.description = req.body.description;
-      exercise.date = Date.parse(req.body.date);
+  News.findById(req.params.id)
+    .then(news => {
+      news.username = req.body.username;
+      news.title = req.body.title;
+      news.description = req.body.description;
+      news.date = Date.parse(req.body.date);
 
-      exercise.save()
+      news.save()
         .then(() => res.json('News updated!'))
         .catch(err => res.status(400).json('Error: ' + err));
     })

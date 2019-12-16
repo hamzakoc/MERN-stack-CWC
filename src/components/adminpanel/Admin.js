@@ -3,15 +3,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import {Card, Button, CardImg, CardTitle, CardText, CardDeck,CardSubtitle, CardBody} from 'reactstrap';
 
-import Navbar from "./navbar.component"
-import ExercisesList from "./exercises-list.component.js";
-import EditExercise from "./edit-exercise.component";
-import CreateExercise from "./create-exercise.component";
-import CreateUser from "./create-user.component";
-import Login from "./login.component";
+import Navbar from "./navbar"
+import NewsList from "./news-list";
+import EditNews from "./edit-news";
+import CreateNews from "./create-news";
+import CreateUser from "./create-user";
+import Login from "./login";
 import Logout from "./logout";
 
-import { ProtectedRoute } from "./protected.route";
+import { ProtectedRoute } from "./protected-route";
 
 
 
@@ -34,9 +34,9 @@ function Admin() {
       <div className="container">
       <Navbar />
       <br/>
-      <ProtectedRoute path="/admin" exact component={ExercisesList} />
-      <ProtectedRoute path="/admin/edit/:id" component={EditExercise} />
-      <ProtectedRoute path="/admin/create" component={CreateExercise} />
+      <ProtectedRoute path="/admin" exact component={NewsList} />
+      <ProtectedRoute path="/admin/edit/:id" component={EditNews} />
+      <ProtectedRoute path="/admin/create" component={CreateNews} />
       <ProtectedRoute path="/admin/user" component={CreateUser} />
       <Route path="/login" component={Login} />
       <Route path="/logout" component={Logout} />

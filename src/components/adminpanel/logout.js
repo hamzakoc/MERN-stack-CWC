@@ -1,11 +1,11 @@
 import React from "react";
 import auth from "./auth";
 
-export const AppLayout = props => {
+export const AppLogout = props => {
   return (
     <div style={{height:"300px", paddingTop:"50px", textAlign:"center" }}>
-      <p>Do you rellay want to log out?</p>
-      <button
+      <p>Do you really want to log out?</p>
+      <button className="btn btn-info"
         onClick={() => {
           auth.logout(() => {
             props.history.push("/admin");
@@ -18,4 +18,4 @@ export const AppLayout = props => {
   );
 };
 
-export default AppLayout;
+export default AppLogout;
