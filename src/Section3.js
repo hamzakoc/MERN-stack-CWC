@@ -57,10 +57,11 @@ export default class NewsList extends Component {
            
         </div>
 
-        
             { this.newsList() }
-        
-      </div>
+            <div  className="sec3-subimg">  
+            <h4 className="sec3-subimgtext">DAHA GUZEL YARINLAR ICIN BURDAYIZ</h4>
+             </div>
+        </div>
       
     )
   }

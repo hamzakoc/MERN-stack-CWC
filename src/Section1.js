@@ -85,7 +85,7 @@ const Section1 = (props) => {
                                     <span class="head-text1">CANADA WELCOME CENTER </span>
                                     
                               </div>
-                    <div class="">
+                    <div class="textshadow">
                     <div class="row media">
                         <div class="col-md-5 carosuel ">
                         <Carousel className="carousel-img"
@@ -100,9 +100,9 @@ const Section1 = (props) => {
                             </Carousel>
                         </div>
                         <div class="col-md-7 carousel-text ">
-                            <h1>Kanada Karşılama Merkezi</h1>
-                                        <h4 class="subheading">Biz kimiz ?</h4>
-                        <p className="section1-text">Northern Lights Relief Foundation  gönüllü grubu, Kanada'ya yeni gelenlerin
+                            <h1 className="textshadow">Kanada Karşılama Merkezi</h1>
+                                        <h4 class="subheading ">Biz kimiz ?</h4>
+                        <p className="section1-text ">Northern Lights Relief Foundation  gönüllü grubu, Kanada'ya yeni gelenlerin
                         bu yeni ülkede ilk sorunlarını çözmeleri için yeni bir fırsat yaratmak üzere bir araya geldi. Northern Lights Relief Foundation, 
                         insani yardım ve mülteci çabalarında işbirliği yapmak için gönüllü ekiplerini bir araya getiren kar amacı gütmeyen bir organizasyondur.
                          Bu ekipler ailelerin ihtiyaçlarına maddi, duygusal ve fiziksel olarak yardım etmeyi ve yeni gelenlere hem entegrasyon hem de yerleşim 
@@ -111,11 +111,11 @@ const Section1 = (props) => {
                         </div>
                     </div>
                     <br></br><br></br><br></br>
-                    <div class="row ">
-                        <div class="col-md-5 boxshadow">
-                            <h4>Ne yapıyoruz ?</h4>
+                    <div class="row  ">
+                        <div class="col-md-5 boxshadow ">
+                            <h4 >Ne yapıyoruz ?</h4>
                                        
-                                        <p className="section1-text">Karşılama Merkezi, çalışanlarına ve gönüllülerine yardım etmek, toplumun her bir üyesinine, 
+                                        <p className="section1-text ">Karşılama Merkezi, çalışanlarına ve gönüllülerine yardım etmek, toplumun her bir üyesinine, 
                                         herhangi bir şekilde veya hiçbir şekilde yargılamayı veya 
                                             ayrımcılıgı kabul etmeyen, hoş ve saygılı bir ortamda çalışan gönüllü bir kuruluştur.</p>
                         </div>
@@ -198,8 +198,8 @@ const Section1 = (props) => {
 
       </div>
       
-      <div  class="interests">  
-              <h4>Yeni gelenlere yardım etmek için buradayız…</h4>
+      <div  className="sec1-subimg">  
+              <h4  className="sec1-subimgtext"  >Yeni gelenlere yardım etmek için buradayız…</h4>
         </div>
     </div>
 

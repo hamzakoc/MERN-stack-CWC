@@ -179,6 +179,7 @@ bottom: -36px;
   background: rgba(5, 97, 128);
   text-align: center;
   margin-right: 1%;
+  
 
 }
 
@@ -255,9 +256,14 @@ bottom: -36px;
     bottom: 0;
   }
 
+  .textshadow{
+
+    text-shadow: 1px 1px 3px rgb(5, 97, 128) ;
+       
+   }
 
 
-  .interests{
+  .sec1-subimg{
     color:rgb(14, 9, 9);
     font-family: monospace;
     font-size: 10px;
@@ -270,11 +276,59 @@ bottom: -36px;
    
     background-image:url(../component/images/f3.png);
     
-    background-size: center;
+    background-size: cover;
     background-attachment: fixed;
    padding-top:100px;
    margin-bottom: 80px;
   }
+
+  .sec1-subimgtext{
+
+    text-shadow: 1px 2px 10px rgb(5, 97, 128) ;
+    margin-right: 1%;
+    color: rgb(5, 97, 128);
+    font-weight: 900;
+   
+   }
+
+
+  .sec3-subimg{
+  
+    font-family: monospace;
+    text-align:center;
+    line-height: 1.5;
+    height: 250px;
+    vertical-align:bottom;
+    padding-left: 30px;
+    text-align: center;
+    margin-right: 1%;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 18px;
+    margin-bottom: 20px;
+    background-image:url(../component/images/cocuk.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+   padding-top:100px;
+ 
+  }
+  .sec3-subimgtext{
+
+    text-shadow: 1px 2px 10px rgb(5, 97, 128) ;
+    text-align:center;
+    opacity: 0.9;
+    text-align: center;
+    margin-right: 1%;
+    color: rgb(236, 236, 238);
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 12px;
+ 
+  }
+
+
+
 
   @media screen and (min-width:600px) {
     .interests{
@@ -291,9 +345,7 @@ bottom: -36px;
   .section3{
    
     background-color: rgb(5, 97, 128);
-    
     box-shadow: 0 4px 8px 0 rgba(5, 97, 128, 0.2), 0 6px 20px 0 rgba(5, 97, 128, 0.19);
-   
     border-radius: 5px;
     margin-bottom: 10px;
     margin-top: 20px;
@@ -301,12 +353,6 @@ bottom: -36px;
     padding-right: 10px;
 
   }
-
-  
-  
-
-
-
 
 
   .section3-duyurular{
