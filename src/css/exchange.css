@@ -1,15 +1,21 @@
 
 .exc-background {
-  background-color: #282c34;
+  /* background-color: #282c34; */
  padding:20px;
 
  
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .exc-header {
-  color: #09d3ac;
-  font-size-adjust:inherit;
+  line-height: 30px; 
+  
+    /* background: rgba(5, 97, 128); */
+    color: rgb(5, 97, 128);
+   
+  
+    padding: 10px 10px 10px; 
+    text-transform: uppercase; 
 }
 
 
@@ -28,6 +34,6 @@ table {
 
 th {
   height: 50px;
-  background-color: #1d6650;
+  background-color:
  
 }

@@ -85,7 +85,7 @@ const Section1 = (props) => {
                                     <span class="head-text1">CANADA WELCOME CENTER </span>
                                     
                               </div>
-                    <div class="textshadow">
+                    <div class="">
                     <div class="row media">
                         <div class="col-md-5 carosuel ">
                         <Carousel className="carousel-img"
@@ -100,7 +100,7 @@ const Section1 = (props) => {
                             </Carousel>
                         </div>
                         <div class="col-md-7 carousel-text ">
-                            <h1 className="textshadow">Kanada Karşılama Merkezi</h1>
+                            <h1 className="">Kanada Karşılama Merkezi</h1>
                                         <h4 class="subheading ">Biz kimiz ?</h4>
                         <p className="section1-text ">Northern Lights Relief Foundation  gönüllü grubu, Kanada'ya yeni gelenlerin
                         bu yeni ülkede ilk sorunlarını çözmeleri için yeni bir fırsat yaratmak üzere bir araya geldi. Northern Lights Relief Foundation, 
@@ -112,7 +112,7 @@ const Section1 = (props) => {
                     </div>
                     <br></br><br></br><br></br>
                     <div class="row  ">
-                        <div class="col-md-5 boxshadow ">
+                        <div class="col-md-6 ">
                             <h4 >Ne yapıyoruz ?</h4>
                                        
                                         <p className="section1-text ">Karşılama Merkezi, çalışanlarına ve gönüllülerine yardım etmek, toplumun her bir üyesinine, 
@@ -125,9 +125,9 @@ const Section1 = (props) => {
                     </div>
 
                     <br></br><br></br><br></br>
-                    <div class="row boxshadow">
+                    <div class="row ">
                         <div class="col-md-5 ">
-                             <img class="main-image" src={education}  class="rounded-circle img-fluid" alt=""/>
+                             <img class="main-image" src={education}  class=" img-fluid" alt=""/>
                         </div>
                         
                         <div class="col-md-7 ">
@@ -140,14 +140,14 @@ const Section1 = (props) => {
                     </div>
 
                     <br></br><br></br><br></br>
-                    <div class="row boxshadow ">
-                        <div class="col-md-5">
+                    <div class="row ">
+                        <div class="col-md-6">
                             <h4>Entegrasyon</h4>
                                         
                                         <p className="section1-text">Hem entegrasyon hem de yerleşim açısından yeni yerleşenlere yardım ediyoruz.
                                         Ailelerin ihtiyaçlarına maddi, duygusal ve fiziksel olarak yardım etmeyi teklif eden bir dizi destek sağlamak için burdayız.</p>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-5">
                             <img class="main-image" src={entegrasyon}  alt=""/>
                         </div>
                     </div>
@@ -159,8 +159,12 @@ const Section1 = (props) => {
 
 
           <div className="rightcolumn">
+                        <div className="card rigtcol">
+                          <Exchange />
+                        
+                          </div>
 
-                        <div className="card rigtcol boxshadow">
+                        <div className="card rigtcol">
                           <h2 className="rigtcol-h">SIĞINMACILAR</h2>
                           
                           <p>Dünya, tarihteki en kötü mülteci krizine tanık oluyor… Dünya genelinde 65 milyondan fazla insan zorla yerlerinden ediliyor. Yani, 
@@ -172,11 +176,9 @@ const Section1 = (props) => {
                         </div>
 
 
-                        <div className="rigtcol boxshadow">
-                          <Exchange />
-                        </div>
+                       
 
-                        <div className="card  rigtcol boxshadow">
+                        <div className="card  rigtcol ">
                           <h3 className="rigtcol-h">EĞİTİM</h3>
                           <p>Bugün dünya çapında 103 milyon genç hala temel okuryazarlık becerisine sahip değil ve bunların % 60'ından fazlası kız. Birleşmiş Milletler'in 
                             sürdürülebilir kalkınma hedeflerinden biri, 2030 yılına kadar tüm kız ve erkek çocuklarının ücretsiz, eşit ve kaliteli 
@@ -184,7 +186,7 @@ const Section1 = (props) => {
                             <a href="/cocuklaricinokullar"><Button className="btn btn-info">Tıklayınız</Button></a>
                         </div>
 
-                        <div className=" card rigtcol boxshadow">
+                        <div className=" card rigtcol">
                           <h3 className="rigtcol-h">PROJELERİMİZ</h3>
                           <p> Projemizin amacı, devam eden projelerimize toplumun katılımını ve ilgisini teşvik etmektir. 
                           Northern Lights Relief Foundation  ile bir proje kurarak, ihtiyacı olanlara yardım etmek için dünya çapında bir çabaya katkıda bulunuyoruz. Daha fazla bilgi icin</p>

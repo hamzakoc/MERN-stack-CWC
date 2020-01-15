@@ -253,7 +253,7 @@ export default class Navi extends React.Component {
 
 
         <Switch>
-           <Route path="/" exact ><Section1/><Section3/><Section2/></Route>
+           <Route path="/" exact ><Section1/><Section3 /><Section2/></Route>
            
            <Route path="/admin"><Admin/></Route>
            

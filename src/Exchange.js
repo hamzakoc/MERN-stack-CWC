@@ -51,10 +51,10 @@ componentDidMount(){
   render() {
   return (
     <div className="exc-background">
-        <header className="">
+        
          
                  
-                   <h2 className="exc-header">Döviz Çevirici</h2>
+                   <h2 className="exc-header">DÖVİZ ÇEVİRİCİ    </h2>
                    <p>Bu çevirici 1 Kanada Dolarına sabitlenmiştir. Canlı kuru görmek için bir rakam giriniz.</p>
                       <p >CAD <input onChange={this.handleInput} value={this.state.value}></input> </p>
                       
@@ -90,7 +90,7 @@ componentDidMount(){
                     </table>
               
         
-      </header>
+    
     </div>
   );
 }}

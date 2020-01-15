@@ -65,7 +65,7 @@ line-height: 1.9;
   }
 
   .section2-card{
-    box-shadow: 0 4px 8px 0 rgba(5, 97, 128, 0.2), 0 6px 20px 0 rgba(5, 97, 128, 0.19);
+   
   }
 
 
@@ -86,7 +86,7 @@ bottom: -36px;
   width: 25%;
   padding-left: 2%;
   padding-right: 2%;
-  margin-top: 30px;
+ 
 }
 
 
@@ -96,10 +96,10 @@ bottom: -36px;
     margin: 0 0 58px;
     background: rgba(5, 97, 128);
     color:wheat;
-     letter-spacing: 1px; 
-      margin: 0 0 30px; 
-      padding: 10px 15px 8px; 
-      text-transform: uppercase;  }
+    letter-spacing: 1px; 
+    margin: 0 0 30px; 
+    padding: 10px 15px 8px; 
+    text-transform: uppercase;  }
 
 .carousel {
  width: 100%;
@@ -125,7 +125,7 @@ bottom: -36px;
 
 
 .main-image{
-    border-radius: 20px;
+    
 }
 
 
@@ -264,18 +264,10 @@ bottom: -36px;
 
 
   .sec1-subimg{
-    color:rgb(14, 9, 9);
-    font-family: monospace;
-    font-size: 10px;
-    text-align:justify;
-    line-height: 1.5;
-    height: 300px;
-    vertical-align:bottom;
-    /* opacity: 0.7; */
-    padding-left: 30px;
    
+    height: 300px;
+    padding-left: 30px;
     background-image:url(../component/images/f3.png);
-    
     background-size: cover;
     background-attachment: fixed;
    padding-top:100px;
@@ -292,41 +284,79 @@ bottom: -36px;
    }
 
 
-  .sec3-subimg{
+
+   .duyurular{
+     background-color: #4C3327;
+    /* color: #F2EFE4; */
+    color: #CB8C1D;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 10px;
+   }
+
+
+   /* @media screen and (max-width:600px) {
+    .sec3-subimg1{
+      height: 260px;
+    
+      background-image:url(../component/images/duyurular.png);
   
-    font-family: monospace;
-    text-align:center;
-    line-height: 1.5;
-    height: 250px;
-    vertical-align:bottom;
-    padding-left: 30px;
-    text-align: center;
-    margin-right: 1%;
-    color: white;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 18px;
-    margin-bottom: 20px;
-    background-image:url(../component/images/cocuk.jpg);
+      background-size: cover;
+      
+        
+    }
+  } */
+
+
+   .sec3-subimg1{
+    
+    height: 260px;
+    
+    background-image:url(../component/images/duyurular.png);
+
     background-size: cover;
+   }
+
+  .sec3-subimg2{
+    
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background-image:url(../component/images/cocuk.jpg);
     background-attachment: fixed;
-   padding-top:100px;
- 
-  }
+    background-size: cover;
+   }
+
+
   .sec3-subimgtext{
-
+    
     text-shadow: 1px 2px 10px rgb(5, 97, 128) ;
-    text-align:center;
-    opacity: 0.9;
-    text-align: center;
-    margin-right: 1%;
-    color: rgb(236, 236, 238);
-    font-size: 50px;
+     opacity: 0.9;
     font-weight: 900;
+    color: rgb(245, 245, 252);
+    font-size: 40px;
     letter-spacing: 12px;
- 
+    top: 20px;
+    position: relative;
+   
+    
   }
 
+  @media screen and (max-width:600px) {
+    .sec3-subimgtext{
+      text-shadow: 1px 2px 10px rgb(5, 97, 128) ;
+      text-align:center;
+      opacity: 0.9;
+      color: rgb(236, 236, 238);
+      font-size: 30px;
+      font-weight: 900;
+      
+        
+    }
+  }
 
 
 
@@ -344,29 +374,43 @@ bottom: -36px;
   
   .section3{
    
-    background-color: rgb(5, 97, 128);
-    box-shadow: 0 4px 8px 0 rgba(5, 97, 128, 0.2), 0 6px 20px 0 rgba(5, 97, 128, 0.19);
-    border-radius: 5px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+ 
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
 
   }
 
 
   .section3-duyurular{
    
-    height: 250px;
+    height: 100px;
     vertical-align:bottom;
     box-shadow: 0 4px 8px 0 rgba(5, 97, 128, 0.2), 0 6px 20px 0 rgba(5, 97, 128, 0.19);
     background-image:url(../component/images/duyuru.jpg);
-    background-color: rgb(0,96,128);
-    background-size: center;
-    
-  
+    background-repeat: no-repeat;  
+    background-position: 0% ;
+    background-size: 100% ;
+      
   }
   
+  @media screen and (max-width:600px) {
+    .section3-duyurular{
+   
+      height: 100px;
+      vertical-align:bottom;
+      box-shadow: 0 4px 8px 0 rgba(5, 97, 128, 0.2), 0 6px 20px 0 rgba(5, 97, 128, 0.19);
+      background-image:url(../component/images/duyuru.jpg);
+      background-repeat: no-repeat;  
+      background-position: 0% 0%;
+      background-size: 100% 100%;
+        
+    }
+  }
+
+
+
 
   .footer{
    

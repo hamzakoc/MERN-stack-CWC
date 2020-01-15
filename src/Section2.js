@@ -53,12 +53,7 @@ const Section2 = () => {
     </CardDeck>
     
     
-    {/* <Switch>
-
-          <Route path="/yardim"><Yardim/></Route>
-          <Route path="/gonullu"><Gonullu/></Route>
-          <Route path="/katkida"><Katkida/></Route>
-    </Switch> */}
+    
 
 
     </Router>

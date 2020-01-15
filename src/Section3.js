@@ -1,27 +1,24 @@
 import React, { Component } from 'react';
-
-import {Card, CardTitle, CardText, CardDeck, CardBody,CardFooter} from 'reactstrap';
+import {Card, CardTitle, CardText, CardDeck, CardBody,CardGroup, CardColumns} from 'reactstrap';
 import axios from 'axios';
 
 const News = props => (
-  <div className="section3 "> 
- 
- <CardDeck className="section3 ">
-      <Card className="" >
+
+
+   
+      <Card  >
     
         <CardBody >
-          <CardTitle  ><h3>{props.news.title}</h3></CardTitle>
+          <CardTitle className="duyurular"  ><bold><strong  ><p>{props.news.title}</p></strong></bold></CardTitle>
           
-          <CardText>{props.news.description}</CardText>
-          <CardFooter>
-      <small className="text-muted">Son güncelleme tarihi {props.news.date.substring(0,10)}</small>
-    </CardFooter>
+          <CardText><p>{props.news.description}</p></CardText>
+         
+      <CardText className="text-muted">Son güncelleme tarihi {props.news.date.substring(0,10)}</CardText>
+  
         </CardBody>
       </Card>
-     
-    </CardDeck>
+    
 
-</div>
 
 )
 
@@ -46,21 +43,30 @@ export default class NewsList extends Component {
 
   newsList() {
     return this.state.news.map(currentnews => {
-      return <News news={currentnews}  key={currentnews._id}/>;
+      return <News className="card-deck card" news={currentnews}  key={currentnews._id}/>;
     })
   }
 
   render() {
     return (
       <div>
-        <div  className="section3-duyurular">  
-           
-        </div>
 
-            { this.newsList() }
-            <div  className="sec3-subimg">  
-            <h4 className="sec3-subimgtext">DAHA GUZEL YARINLAR ICIN BURDAYIZ</h4>
-             </div>
+        <div class="sec3-subimg1"> 
+               </div>
+        <CardDeck>
+
+            <CardColumns  >  
+        { this.newsList() }
+           </CardColumns>
+            
+           </CardDeck>
+             <div class="sec3-subimg2">
+               
+              </div>
+
+
+
+
         </div>
       
     )
