@@ -21,10 +21,10 @@ An external API has been used for live Currency Exchange
 
 In the project directory, you can run:
 
-for frontend :
+For frontend :
 ### `npm start`
 
-for backend :
+For backend :
 ### `node server`
 
 
