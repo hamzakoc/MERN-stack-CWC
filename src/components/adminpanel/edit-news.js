@@ -18,6 +18,7 @@ export default class EditNews extends Component {
   }
 
   componentDidMount=()=> {
+    PROCESS.env.base_url || 'localhost:5000' + '/admin/news'
     axios.get('http://localhost:5000/admin/news/'+this.props.match.params.id)
       .then(response => {
         this.setState({
