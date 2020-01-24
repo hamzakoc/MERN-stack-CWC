@@ -18,8 +18,9 @@ export default class EditNews extends Component {
   }
 
   componentDidMount=()=> {
-    PROCESS.env.base_url || 'localhost:5000' + '/admin/news'
-    axios.get('http://localhost:5000/admin/news/'+this.props.match.params.id)
+   
+    // axios.get('http://localhost:5000/admin/news/'+this.props.match.params.id)
+    axios.get( PROCESS.env.base_url || 'localhost:5000' + '/admin/news'+this.props.match.params.id)
       .then(response => {
         this.setState({
           username: response.data.username,
@@ -32,7 +33,8 @@ export default class EditNews extends Component {
         console.log(error);
       })
 
-    axios.get('http://localhost:5000/admin/users/')
+    // axios.get('http://localhost:5000/admin/users/')
+    axios.get( PROCESS.env.base_url || 'localhost:5000' + '/admin/users')
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
@@ -82,7 +84,8 @@ export default class EditNews extends Component {
 
     console.log(news);
 
-    axios.post('http://localhost:5000/admin/news/update/' + this.props.match.params.id, news)
+    // axios.post('http://localhost:5000/admin/news/update/' + this.props.match.params.id, news)
+    axios.post( PROCESS.env.base_url || 'localhost:5000' + '/admin/news/update/' + this.props.match.params.id, news)
       .then(res => console.log(res.data));
 
     
