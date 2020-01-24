@@ -34,7 +34,7 @@ function Admin() {
       <div className="container">
       <Navbar />
       <br/>
-      <ProtectedRoute path="/admin" exact component={Login} />
+      <ProtectedRoute path="/admin" exact component={NewsList} />
       <ProtectedRoute path="/admin/edit/:id" component={EditNews} />
       <ProtectedRoute path="/admin/create" component={CreateNews} />
       <ProtectedRoute path="/admin/user" component={CreateUser} />
