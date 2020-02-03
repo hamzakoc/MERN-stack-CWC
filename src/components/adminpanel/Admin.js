@@ -34,12 +34,12 @@ function Admin() {
       <div className="container">
       <Navbar />
       <br/>
-      <ProtectedRoute path="/admin" exact component={NewsList} />
+      <ProtectedRoute path="/admin/news" exact component={NewsList} />
       <ProtectedRoute path="/admin/edit/:id" component={EditNews} />
       <ProtectedRoute path="/admin/create" component={CreateNews} />
       <ProtectedRoute path="/admin/user" component={CreateUser} />
-      <Route path="/login" component={Login} />
-      <Route path="/logout" component={Logout} />
+      <Route path="/admin/login" component={Login} />
+      <Route path="/admin/logout" component={Logout} />
 
       </div>
     </Router>

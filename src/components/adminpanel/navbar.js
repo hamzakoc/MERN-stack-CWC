@@ -10,7 +10,7 @@ export default class Navbar extends Component {
         <div className="collpase navbar-collapse">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">
-          <Link to="/admin/" className="nav-link text-light" >News</Link>
+          <Link to="/admin/news" className="nav-link text-light" >News</Link>
           </li>
           <li className="navbar-item">
           <Link  className="nav-link text-light" >||</Link>
@@ -30,14 +30,14 @@ export default class Navbar extends Component {
           <Link  className="nav-link text-light" >||</Link>
           </li>
           <li className="navbar-item">
-          <Link to="/login" className="nav-link text-light">Log Me In</Link>
+          <Link to="/admin/login" className="nav-link text-light">Log Me In</Link>
           </li>
 
           <li className="navbar-item">
           <Link  className="nav-link text-light" >||</Link>
           </li>
           <li className="navbar-item">
-          <Link to="/logout" className="nav-link text-light">Log Me Out</Link>
+          <Link to="/admin/logout" className="nav-link text-light">Log Me Out</Link>
           </li>
        
         </ul>

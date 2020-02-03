@@ -72,7 +72,7 @@ class LoginPage extends Component {
           onClick={() => {
             if(this.state.username==="admin" && this.state.password==="123"){
               auth.login(() => {
-                    this.props.history.push("/admin")} )} }}
+                    this.props.history.push("/admin/news")} )} }}
            
         />
          
