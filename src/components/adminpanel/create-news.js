@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-const base_url = 'https://wlcmcntr.herokuapp.com/';+
+const base_url = 'https://wlcmcntr.herokuapp.com/';
 export default class CreateNews extends Component {
   constructor(props) {
     super(props);
