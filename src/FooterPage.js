@@ -25,9 +25,30 @@ const FooterPage = () => {
 
    <div className="page-footer font-small unique-color-dark">
              <div style={navcolor} className="text-center text-white "  >           
-                                    
+                    
+                    <div className=" footer">
+                            <div className="container ">      
+                                <div className=" container py-2 d-flex align-items-center">
+                                    <div className="col-md-6 col-lg-5 text-center  mb-4 mb-md-0">
+                                        <h6 className="mb-0">Bizi sosyal medyadan takip edin!</h6>
+                                    </div>
+                                    <div className="col-md-6 col-lg-7 text-center text-md-right" style={itemscolor}>
+                                                                                                               
+                                        <a href=""><FontAwesomeIcon icon={faTwitter} className="fab fa-twitter mr-5" style={itemscolor} size="2x"/> </a>
+                                        <a href=""> <FontAwesomeIcon icon={faFacebook} className="fab fa-facebook-f  mr-5" style={itemscolor} size="2x"/></a>
+                                        <a href=""><FontAwesomeIcon icon={faLinkedin} className="fab fa-linkedin-in  mr-5" style={itemscolor} size="2x" /></a>
+                                        <a href=""> <FontAwesomeIcon icon={faInstagram} className="fab fa-instagram  mr-5" style={itemscolor} size="2x"/></a>
+                                        <a href=""><FontAwesomeIcon icon={faGoogle} className="fab fa-google-plus-g  mr-5"  style={itemscolor} size="2x" /></a>
+                                       
+                                      
+                                        
+                                    </div>       
+                                </div>
+                            </div>
+                         </div>
+                 
+                
                     <div className=" text-center text-md-left mt-5">
-                        
                     <div className="row mt-3">
                         <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                             <h6 className="text-uppercase font-weight-bold">Canada Welcome Centre</h6>

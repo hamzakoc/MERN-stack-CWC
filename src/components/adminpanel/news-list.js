@@ -34,7 +34,7 @@ export default class NewsList extends Component {
   }
 
   deleteNews(id) {
-    axios.delete('http://localhost:5000/admin/news/'+id)
+    axios.delete('https://wlcmcntr.herokuapp.com/admin/news/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
