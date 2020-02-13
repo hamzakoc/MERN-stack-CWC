@@ -24,7 +24,7 @@ export default class NewsList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/admin/news/')
+    axios.get('https://wlcmcntr.herokuapp.com/admin/news')
       .then(response => {
         this.setState({ news: response.data })
       })
