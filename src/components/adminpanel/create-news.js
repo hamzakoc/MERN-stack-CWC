@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-
+const base_url = 'https://wlcmcntr.herokuapp.com/';+
 export default class CreateNews extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +18,7 @@ export default class CreateNews extends Component {
   }
 
   componentDidMount=()=> {
-    axios.get('http://localhost:5000/admin/users/')
+    axios.get(base_url + 'admin/users/')
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
@@ -69,7 +69,7 @@ export default class CreateNews extends Component {
 
     console.log(news);
 
-    axios.post('http://localhost:5000/admin/news/add', news)
+    axios.post(base_url + 'admin/news/add', news)
       .then(res => console.log(res.data));
 
     // window.location = '/admin';

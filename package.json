@@ -28,7 +28,7 @@
         "server": "cd ./backend && node server",
         "client": "react-scripts start",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "start": "cd ./backend && node server",
+    "start": "react-scripts start && cd ./backend && node server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
