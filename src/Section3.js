@@ -1,23 +1,43 @@
 import React, { Component } from 'react';
-import {Card, CardTitle, CardText, CardDeck, CardBody,CardGroup, CardColumns} from 'reactstrap';
+import {Card, CardTitle, CardText, CardDeck, CardBody,CardGroup, CardColumns, Row, Col} from 'reactstrap';
 import axios from 'axios';
+
+
+const base_url = 'https://wlcmcntr.herokuapp.com/';
+// const base_url = 'http://localhost:5000/';
+
+const duyurular = {
+  color: '#CB8C1D',
+  backgroundColor: ' #4C3327',
+  textTransform: "uppercase",
+  paddingLeft: '10px',
+  paddingTop: '5px',
+  paddingBottom: '5px',
+  textAlign: 'center',
+  borderRadius: '10px',
+};
 
 const News = props => (
 
 
    
-      <Card  >
+      <Card  className="ml-auto m-auto">
     
         <CardBody >
-          <CardTitle className="duyurular"  ><bold><strong  ><p>{props.news.title}</p></strong></bold></CardTitle>
+        <Row>
+      <Col>
+          <CardTitle className="title font-weight-bold" style={duyurular} ><bold><strong  ><p>{props.news.title}</p></strong></bold></CardTitle>
           
           <CardText><p>{props.news.description}</p></CardText>
          
       <CardText className="text-muted">Son güncelleme tarihi {props.news.date.substring(0,10)}</CardText>
-  
+      </Col>
+        </Row>
         </CardBody>
+      
       </Card>
-    
+     
+   
 
 
 )
@@ -31,7 +51,7 @@ export default class NewsList extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://wlcmcntr.herokuapp.com/admin/news')
+    axios.get(base_url + 'admin/news')
       .then(response => {
         this.setState({ news: response.data })
       })
@@ -51,8 +71,14 @@ export default class NewsList extends Component {
     return (
       <div>
 
-        <div class="sec3-subimg1"> 
-               </div>
+               <div className="section ">
+      <img
+                  alt="..."
+                  className="img-responsive"
+                  src={require("./component/images/duyurular.png")}
+                  style={{ width: "100%" }}
+                />
+      </div>
         <CardDeck>
 
             <CardColumns  >  
@@ -60,7 +86,7 @@ export default class NewsList extends Component {
            </CardColumns>
             
            </CardDeck>
-             <div class="sec3-subimg2">
+             <div class="sec3-subimg2"  >
                
               </div>
 

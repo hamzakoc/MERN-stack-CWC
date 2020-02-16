@@ -20,7 +20,6 @@ const Section2 = () => {
         <CardImg top width="100%" src={yardim} alt="Card image cap" />
         <CardBody>
           <CardTitle>Yardıma İhtiyacınız mı var?</CardTitle>
-          <CardSubtitle></CardSubtitle>
           <CardText>Kanada'ya alışmak zaman alabilir. Çözmeniz gereken birçok probleminiz olacak. 
             Biz Kanada Karşılama Merkezi olarak karşılaştığınız sorunları çözmek için elimizden
              geldiğince yardımcı olacağız.Daha fazla bilgi için </CardText>

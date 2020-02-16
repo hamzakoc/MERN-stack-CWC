@@ -123,12 +123,14 @@ export default class Navi extends React.Component {
 
     const navstyle = {
       color: "white",
-      paddingLeft: "30px"
+      paddingLeft: "30px",
+     
         };
    
         const newsstyle = {
           color: "white",
-          paddingTop: "30px"
+          paddingTop: "30px",
+         
             };
 
     return (
@@ -136,7 +138,7 @@ export default class Navi extends React.Component {
       <Router>
       <div>
         
-        <Navbar className="navbarfixed navbar"   light expand="md">
+        <Navbar className="navbarfixed navbar"   light expand="lg">
           
           <NavbarBrand  style={navstyle} href="/"><img src={logo} width="40" height="40"></img></NavbarBrand>
           <NavbarBrand style={newsstyle} href="/admin"></NavbarBrand>

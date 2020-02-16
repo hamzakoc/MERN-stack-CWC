@@ -1,32 +1,4 @@
 
-.navbar{
-
-}
-
-
-@media screen and (max-width: 375px) {
-  .navbar {   
-    color:rgb(85, 56, 56);
-    text-align:justify;
-    line-height: 1.5;
-    padding-top: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-     margin-bottom: 20px;
-  }
-}
-
-
-
-@media screen and (max-width: 675px) {
-  .navbar {   
-   
-  }
-}
-
-
-
 .section1-background{
  color:rgb(85, 56, 56);
   font-family: monospace;
@@ -64,36 +36,19 @@ line-height: 1.9;
 
   }
 
-  .section2-card{
-   
-  }
 
 
 
-
-.leftcolumn {   
-  float: left;
-  width: 75%;
-  padding-left: 2%;
-}
 
 .rightcolumn {
 color: #00060c; 
 font-family: 'Georgia', serif; 
-font-size: 18px; 
-bottom: -36px;
-  float: left;
   width: 25%;
-  padding-left: 2%;
-  padding-right: 2%;
- 
-}
+ }
 
 
 .rigtcol-h{
   
-    line-height: 30px; 
-    margin: 0 0 58px;
     background: rgba(5, 97, 128);
     color:wheat;
     letter-spacing: 1px; 
@@ -104,14 +59,13 @@ bottom: -36px;
 .carousel {
  width: 100%;
  height: 500px;
- align-self: center;
  
  
 }
 
 
 .carousel-text {
- margin-top: 80px;
+ margin-top: 2%;
  position: relative;
     
    }
@@ -124,18 +78,7 @@ bottom: -36px;
       }
 
 
-.main-image{
-    
-}
 
-
-@media screen and (max-width: 1000px) {
-  .main-image {   
-    width:500px;
-    height: 300px;
-    padding: 20;
-  }
-}
 
 
 
@@ -150,27 +93,9 @@ bottom: -36px;
     margin-bottom: 20px;
     padding:20px;
     font-size: 18px;
+    float: left;
 }
 
-
-
-@media screen and (max-width: 1000px) {
-  .leftcolumn, .rightcolumn , .carousel, .carousel-text, div {   
-    width: 100%;
-    height: 70%;
-    padding: 20;
-  }
-}
-
-
-  
-  @media screen and (min-width:600px) {
-    .carousel-text, .media , .row{
-        width: 100%;
-        padding: 20;
-        
-    }
-  }
 
 
 
@@ -178,7 +103,8 @@ bottom: -36px;
   .head-text{
   background: rgba(5, 97, 128);
   text-align: center;
-  margin-right: 1%;
+  margin-top: 2%;
+  
   
 
 }
